@@ -1,0 +1,42 @@
+@media only screen and (max-width: 375px)
+    .container
+        margin: 0 20px
+    .features-container
+        display: grid
+        grid-template-columns: 1fr
+        gap: 46px
+
+@media only screen and (min-width: 375px)
+    .container
+        margin: 0 40px
+    .features-container
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 46px
+
+@media only screen and (min-width: 1440px)
+    .container
+        margin: 0 112px
+    .features-container
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        gap: 46px
+
+.container
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.title
+    font-weight: 700
+    font-size: 48px
+    line-height: 60px
+    text-align: center
+    margin-bottom: 8px
+
+.description
+    font-weight: 400
+    font-size: 18px
+    line-height: 28px
+    text-align: center
+    margin-bottom: 64px

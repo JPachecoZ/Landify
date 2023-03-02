@@ -1,0 +1,15 @@
+<div class="container">
+  <p class="title">Tailor-made features</p>
+  <p class="description">
+    Lorem ipsum is common placeholder text used to demonstrate the graphic
+    elements of a document or visual presentation.
+  </p>
+  <div class="features-container">
+    <app-feature
+      *ngFor="let feature of features"
+      [title]="feature.title"
+      [description]="feature.description"
+      [icon]="feature.icon"
+    ></app-feature>
+  </div>
+</div>

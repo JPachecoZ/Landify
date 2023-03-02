@@ -12,12 +12,18 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { UpperBodyComponent } from './components/upper-body/upper-body.component';
+import { FeaturesComponent } from './components/features/features.component';
+import { FeatureComponent } from './components/feature/feature.component';
+import { MetricsComponent } from './components/metrics/metrics.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainNavComponent,
-    UpperBodyComponent
+    UpperBodyComponent,
+    FeaturesComponent,
+    FeatureComponent,
+    MetricsComponent
   ],
   imports: [
     BrowserModule,
