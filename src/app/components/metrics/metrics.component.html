@@ -1,1 +1,15 @@
-<p>metrics works!</p>
+<div class="container">
+  <div class="header">
+    <p class="title">Our 18 years of achievements</p>
+    <p class="description">With our super powers we have reached this</p>
+  </div>
+
+  <div class="metrics-container">
+    <app-metric
+      *ngFor="let metric of metrics"
+      [title]="metric.title"
+      [description]="metric.description"
+      [icon]="metric.icon"
+    ></app-metric>
+  </div>
+</div>

@@ -1,0 +1,50 @@
+@media only screen and (max-width: 540px)
+    .container
+        margin: 0 20px
+        flex-direction: column
+        gap: 48px
+    .metrics-container
+        display: grid
+        grid-template-columns: 1fr
+        gap: 46px
+    .header
+        max-width: 100%
+
+@media only screen and (min-width: 540px)
+    .container
+        margin: 0 40px
+        flex-direction: column
+        gap: 48px
+    .metrics-container
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 46px
+    .header
+        max-width: 100%
+
+@media only screen and (min-width: 1440px)
+    .container
+        margin: 0 112px
+        flex-direction: row
+        gap: 0px
+    .metrics-container
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 46px
+    .header
+        max-width: 592px
+
+.container
+    display: flex
+    justify-content: space-evenly
+
+.title
+    font-weight: 700
+    font-size: 48px
+    line-height: 60px
+    margin-bottom: 8px
+
+.description
+    font-weight: 400
+    font-size: 18px
+    line-height: 28px

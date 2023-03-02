@@ -15,6 +15,7 @@ import { UpperBodyComponent } from './components/upper-body/upper-body.component
 import { FeaturesComponent } from './components/features/features.component';
 import { FeatureComponent } from './components/feature/feature.component';
 import { MetricsComponent } from './components/metrics/metrics.component';
+import { MetricComponent } from './components/metric/metric.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MetricsComponent } from './components/metrics/metrics.component';
     UpperBodyComponent,
     FeaturesComponent,
     FeatureComponent,
-    MetricsComponent
+    MetricsComponent,
+    MetricComponent
   ],
   imports: [
     BrowserModule,
