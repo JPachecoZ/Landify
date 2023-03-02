@@ -2,14 +2,33 @@
   <mat-sidenav
     #drawer
     class="sidenav"
-    [ngClass]="{ hidden: !(isHandset$ | async) }"
     fixedInViewport
-    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-    [mode]="(isHandset$ | async) ? 'over' : 'side'"
-    [opened]="(isHandset$ | async) === false"
+    [attr.role]="
+      (isHandset$ | async) || (isTablet$ | async) ? 'dialog' : 'navigation'
+    "
+    [mode]="'over'"
+    [opened]="
+      !((isHandset$ | async) === false || (isTablet$ | async) === false)
+    "
   >
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
+      <div *ngIf="isHandset$ | async" class="login-register-buttons">
+        <button
+          mat-flat-button
+          color="primary"
+          style="font-family: 'Inter'; font-weight: 600"
+        >
+          Iniciar sesión
+        </button>
+        <button
+          mat-flat-button
+          color="accent"
+          style="color: #7c3aed; font-family: 'Inter'; font-weight: 600"
+        >
+          Regístrate
+        </button>
+      </div>
       <a mat-list-item href="#">Features</a>
       <a mat-list-item href="#">Pricing</a>
       <a mat-list-item href="#">Careers</a>
@@ -19,14 +38,14 @@
   <mat-sidenav-content>
     <mat-toolbar color="none">
       <img src="../../../assets/Logo.svg" />
-      <div *ngIf="!(isHandset$ | async)">
+      <div *ngIf="!(isHandset$ | async) && !(isTablet$ | async)">
         <a href="#">Features</a>
         <a href="#">Pricing</a>
         <a href="#">Careers</a>
         <a href="#">Ayuda</a>
       </div>
       <div class="spacer"></div>
-      <div class="login-register-buttons">
+      <div *ngIf="!(isHandset$ | async)" class="login-register-buttons">
         <button
           mat-flat-button
           color="primary"
@@ -47,7 +66,7 @@
         aria-label="Toggle sidenav"
         mat-icon-button
         (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async"
+        *ngIf="(isHandset$ | async) || (isTablet$ | async)"
       >
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
