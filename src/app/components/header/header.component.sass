@@ -1,47 +1,56 @@
-@media only screen and (max-width: 375px)
+@media only screen and (max-width: 540px)
     .container
-        margin: 0 20px
+        display: flex
+        margin: 74px 20px
         flex-direction: column
         align-items: center
+        justify-content: center
     .title
         font-weight: 700
         font-size: 36px
         line-height: 45px
-@media only screen and (min-width: 375px)
+    .content
+        max-width: 648px
+        margin-top: 48px
+        margin-right: 0px
+        margin-bottom: 80px
+@media only screen and (min-width: 540px)
     .container
-        margin: 0 40px
+        display: flex
+        margin: 74px 40px
         flex-direction: column
         align-items: center
+        justify-content: center
     .title
         font-weight: 700
         font-size: 48px
         line-height: 60px
+    .content
+        max-width: 648px
+        margin-top: 80px
+        margin-right: 0px
+        margin-bottom: 80px
 @media only screen and (min-width: 1440px)
     .container
-        margin: 0 112px
+        display: flex
+        margin: 74px 112px
         flex-direction: row
         align-items: flex-start
+        justify-content: center
     .title
         font-weight: 700
         font-size: 60px
         line-height: 72px
-
-.content
-    max-width: 648px
-    margin-top: 104px
+    .content
+        max-width: 648px
+        margin-top: 104px
+        margin-right: 164px
 
 .header
     display: flex
     flex-direction: column
     gap: 16px
     margin-bottom: 32px
-
-.container
-    display: flex
-    width: 100%
-    justify-content: center
-    gap: 164px
-    margin: 74px 0px
 
 .description
     font-weight: 400
