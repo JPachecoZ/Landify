@@ -11,7 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-import { UpperBodyComponent } from './components/upper-body/upper-body.component';
+import { HeaderComponent } from './components/header/header.component';
 import { FeaturesComponent } from './components/features/features.component';
 import { FeatureComponent } from './components/feature/feature.component';
 import { MetricsComponent } from './components/metrics/metrics.component';
@@ -22,7 +22,7 @@ import { FooterComponent } from './components/footer/footer.component';
   declarations: [
     AppComponent,
     MainNavComponent,
-    UpperBodyComponent,
+    HeaderComponent,
     FeaturesComponent,
     FeatureComponent,
     MetricsComponent,
