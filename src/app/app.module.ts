@@ -16,6 +16,7 @@ import { FeaturesComponent } from './components/features/features.component';
 import { FeatureComponent } from './components/feature/feature.component';
 import { MetricsComponent } from './components/metrics/metrics.component';
 import { MetricComponent } from './components/metric/metric.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { MetricComponent } from './components/metric/metric.component';
     FeaturesComponent,
     FeatureComponent,
     MetricsComponent,
-    MetricComponent
+    MetricComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
