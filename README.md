@@ -1,14 +1,32 @@
-# MyReto
+# Technical project for a company
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1 and is part of a proof of knowledge for a company.
+
+## Requirements
+
+To execute this project you will need to install the following development tools
+    - [Node.js and npm](https://nodejs.org/)
+    - [Angular CLI](https://cli/angular/io)
+    - [Angular Material](https://material.angular.io/)
+    - [Git](https://git-scm.com/)
+
+## Installation
+
+Open your terminal, navigate to the folder where you want to clone the project and:
+
+1. Clone the repository in your local machine running this code:
+   
+   `git clone https://github.com/JPachecoZ/Landify.git`
+
+2. Run the following commands to install dependencies:
+
+   `npm install`
+
+3. Run the commands explained in the `Development server` issue.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
