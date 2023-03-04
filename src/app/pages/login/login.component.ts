@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
+import { SessionsService } from 'src/app/services/sessions.service';
 
 @Component({
   selector: 'app-login',
@@ -12,4 +13,12 @@ export class LoginComponent {
     password: new FormControl('')
   })
   hide = true;
+
+  constructor(
+    private sessionsService: SessionsService
+  ){}
+
+  login(){
+    this.sessionsService.login(this.loginForm.value)
+  }
 }

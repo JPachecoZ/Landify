@@ -10,7 +10,7 @@
       <p class="login-title">Inicia sesión</p>
       <mat-form-field appearance="outline">
         <mat-label>Email</mat-label>
-        <input matInput placeholder="john@mail.com" />
+        <input matInput formControlName="email" placeholder="john@mail.com" />
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>Password</mat-label>
@@ -18,6 +18,7 @@
           matInput
           [type]="hide ? 'password' : 'text'"
           placeholder="******"
+          formControlName="password"
         />
         <button
           mat-icon-button
@@ -38,6 +39,7 @@
         mat-flat-button
         color="primary"
         style="font-family: 'Inter'; font-weight: 600; height: 50px"
+        (click)="login()"
       >
         Ingresar
       </button>
