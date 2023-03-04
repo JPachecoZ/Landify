@@ -1,7 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
+import { MatDialog, MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog'
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { UsersService } from 'src/app/services/users.service';
 import { User } from 'src/app/models/user.model';
+import { PostData } from 'src/app/models/post-data.model';
+
 
 @Component({
   selector: 'app-posts',
@@ -19,6 +22,8 @@ export class PostsComponent {
   columnsToDisplay: string[] = ['Nombre', 'Username', 'Dirección', 'Correo', 'Phone Number'];
   columnsToDisplayWithExpand: string[] = [...this.columnsToDisplay, 'expand'];
   expandedElement!: User | null
+  title!: string
+  description!: string
   users: User[] = [
     {
       'Nombre': "",
@@ -32,6 +37,7 @@ export class PostsComponent {
   ]
 
   constructor(
+    public dialog: MatDialog,
     private usersService: UsersService
   ){ }
 
@@ -51,5 +57,33 @@ export class PostsComponent {
       })
     }
     )
+  }
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(CreatePostDialogComponent, {
+      data: {title: this.title, description: this.description},
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+      this.description = result;
+    });
+  }
+}
+
+@Component({
+  selector: 'app-create-post-dialog',
+  templateUrl: './create-post-dialog.html',
+  styleUrls: ['./create-post-dialog.sass'],
+})
+
+export class CreatePostDialogComponent {
+  constructor(
+    public dialogRef: MatDialogRef<CreatePostDialogComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: PostData,
+  ) {}
+
+  onNoClick(): void {
+    this.dialogRef.close();
   }
 }

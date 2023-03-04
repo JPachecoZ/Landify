@@ -1,0 +1,23 @@
+<div class="dialog-container">
+  <div mat-dialog-actions class="close-container">
+    <mat-icon (click)="onNoClick()" class="close-button">close</mat-icon>
+  </div>
+  <p mat-dialog-title>Crear Post</p>
+  <div mat-dialog-content class="form-container">
+    <mat-form-field appearance="outline" class="input-container">
+      <mat-label>Título</mat-label>
+      <input matInput [(ngModel)]="data.title" />
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="input-container">
+      <mat-label>Descripción</mat-label>
+      <input matInput [(ngModel)]="data.description" />
+    </mat-form-field>
+    <button
+      mat-flat-button
+      color="primary"
+      style="font-family: 'Inter'; font-weight: 600; height: 48px; width: 277px"
+    >
+      Guardar
+    </button>
+  </div>
+</div>

@@ -14,6 +14,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatTableModule } from '@angular/material/table';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatNativeDateModule } from '@angular/material/core';
 import { HeaderComponent } from './components/header/header.component';
 import { FeaturesComponent } from './components/features/features.component';
@@ -28,6 +29,7 @@ import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input'
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { PostsComponent } from './pages/posts/posts.component';
+import { CreatePostDialogComponent } from './pages/posts/posts.component';
 
 
 @NgModule({
@@ -42,7 +44,8 @@ import { PostsComponent } from './pages/posts/posts.component';
     FooterComponent,
     HomeComponent,
     LoginComponent,
-    PostsComponent
+    PostsComponent,
+    CreatePostDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -59,6 +62,7 @@ import { PostsComponent } from './pages/posts/posts.component';
     MatInputModule,
     MatCheckboxModule,
     MatTableModule,
+    MatDialogModule,
     MatNativeDateModule,
     FormsModule,
     ReactiveFormsModule
