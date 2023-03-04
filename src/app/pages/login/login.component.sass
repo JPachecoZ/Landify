@@ -1,0 +1,62 @@
+@media only screen and (max-width: 540px)
+    .login-portrait
+        display: none
+    .login-container
+        width: 100%
+
+@media only screen and (min-width: 540px)
+    .login-portrait
+        display: block
+        width: 50%
+    .login-container
+        width: 50%
+
+@media only screen and (min-width: 1440px)
+    .login-portrait
+        display: block
+        width: 50%
+    .login-container
+        width: 50%
+
+.container
+    display: flex
+    font-family: Roboto
+    height: 100%
+    .login-container
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding: 0 16.5px
+    form
+        display: flex
+        flex-direction: column
+        max-width: 360px
+        width: 100%
+        .welcome
+            font-weight: 400
+            font-size: 16px
+            line-height: 19px
+            color: #2D3748
+            margin-bottom: 2px
+        .login-title
+            font-weight: 700
+            font-size: 30px
+            line-height: 35px
+            color: #1A202C
+            margin-bottom: 20.5px
+        .forgot-password
+            font-weight: 400
+            font-size: 14px
+            line-height: 16px
+            color: #2C5282
+            text-align: end
+            margin-bottom: 25px
+        .remember-mail
+            font-weight: 400
+            font-size: 14px
+            line-height: 16px
+            left: -10px
+            margin-bottom: 60px
+        button
+            margin-bottom: 15px

@@ -1,0 +1,67 @@
+<div class="container">
+  <img
+    src="../../../assets/LoginImage.png"
+    alt="login portrait"
+    class="login-portrait"
+  />
+  <div class="login-container">
+    <form [formGroup]="loginForm">
+      <p class="welcome">Bienvenido</p>
+      <p class="login-title">Inicia sesión</p>
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" placeholder="john@mail.com" />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input
+          matInput
+          [type]="hide ? 'password' : 'text'"
+          placeholder="******"
+          formControlName="password"
+        />
+        <button
+          mat-icon-button
+          matSuffix
+          (click)="hide = !hide"
+          [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide"
+          style="height: 30px; align-self: center"
+        >
+          <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+        </button>
+      </mat-form-field>
+      <a href="#"><p class="forgot-password">¿Olvidaste tu contraseña?</p></a>
+      <mat-checkbox color="primary" class="remember-mail"
+        >Recordar correo</mat-checkbox
+      >
+      <button
+        mat-flat-button
+        color="primary"
+        style="font-family: 'Inter'; font-weight: 600; height: 50px"
+        (click)="login()"
+      >
+        Ingresar
+      </button>
+      <button
+        mat-flat-button
+        color="primary"
+        style="
+          font-family: 'Inter';
+          font-weight: 600;
+          height: 50px;
+          background-color: #2d3748;
+        "
+      >
+        <mat-icon
+          ><img
+            src="../../../assets/Google.svg"
+            alt="google icon"
+            width="20px"
+            height="20px"
+        /></mat-icon>
+        Ingresar con google
+      </button>
+    </form>
+  </div>
+</div>
