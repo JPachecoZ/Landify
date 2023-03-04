@@ -1,9 +1,11 @@
 import { Component, Inject } from '@angular/core';
 import { MatDialog, MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog'
 import { animate, state, style, transition, trigger } from '@angular/animations';
+import { FormGroup, FormControl } from '@angular/forms';
 import { UsersService } from 'src/app/services/users.service';
+import { PostsService } from 'src/app/services/posts.service';
 import { User } from 'src/app/models/user.model';
-import { PostData } from 'src/app/models/post-data.model';
+import { Post } from 'src/app/models/post.model';
 
 
 @Component({
@@ -23,7 +25,7 @@ export class PostsComponent {
   columnsToDisplayWithExpand: string[] = [...this.columnsToDisplay, 'expand'];
   expandedElement!: User | null
   title!: string
-  description!: string
+  body!: string
   users: User[] = [
     {
       'Nombre': "",
@@ -38,7 +40,7 @@ export class PostsComponent {
 
   constructor(
     public dialog: MatDialog,
-    private usersService: UsersService
+    private usersService: UsersService,
   ){ }
 
   ngOnInit(): void {
@@ -59,14 +61,14 @@ export class PostsComponent {
     )
   }
 
-  openDialog(): void {
+  openDialog(userId: number): void {
     const dialogRef = this.dialog.open(CreatePostDialogComponent, {
-      data: {title: this.title, description: this.description},
+      data: {title: this.title, body: this.body, userId: userId},
     });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
-      this.description = result;
+      this.body = result;
     });
   }
 }
@@ -78,12 +80,22 @@ export class PostsComponent {
 })
 
 export class CreatePostDialogComponent {
+
   constructor(
     public dialogRef: MatDialogRef<CreatePostDialogComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: PostData,
+    private postsService: PostsService,
+    @Inject(MAT_DIALOG_DATA) public data: Post,
   ) {}
 
   onNoClick(): void {
     this.dialogRef.close();
+  }
+
+  addPost(){
+    this.postsService.addPost({title: this.data.title, body: this.data.body, userId: this.data.userId})
+    .subscribe((response) =>{
+      console.log(`Post Saved as ${response}`)
+    })
+    this.onNoClick()
   }
 }

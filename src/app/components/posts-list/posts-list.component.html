@@ -1,0 +1,32 @@
+<div *ngIf="!posts" class="no-posts-container">
+  <p class="no-posts-title">Aún no tienes posts</p>
+  <button
+    mat-flat-button
+    color="primary"
+    style="font-family: 'Inter'; font-weight: 600; font-size: 14px"
+  >
+    Crear un post
+  </button>
+</div>
+<div *ngIf="posts" class="posts-container">
+  <div class="posts-content">
+    <div *ngFor="let post of posts" class="posts-data">
+      <p class="posts-title">{{ post.title }}</p>
+      <p class="posts-body">{{ post.body }}</p>
+    </div>
+  </div>
+  <button
+    mat-flat-button
+    color="primary"
+    style="
+      font-family: 'Inter';
+      font-weight: 600;
+      font-size: 14px;
+      margin-right: 20px;
+    "
+    (click)="openDialog()"
+  >
+    Crear un post
+  </button>
+</div>
+<!-- (click)="openDialog()" -->

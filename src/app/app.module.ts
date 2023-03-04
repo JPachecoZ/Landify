@@ -30,6 +30,7 @@ import { MatInputModule } from '@angular/material/input'
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { PostsComponent } from './pages/posts/posts.component';
 import { CreatePostDialogComponent } from './pages/posts/posts.component';
+import { PostsListComponent } from './components/posts-list/posts-list.component';
 
 
 @NgModule({
@@ -46,6 +47,7 @@ import { CreatePostDialogComponent } from './pages/posts/posts.component';
     LoginComponent,
     PostsComponent,
     CreatePostDialogComponent,
+    PostsListComponent,
   ],
   imports: [
     BrowserModule,

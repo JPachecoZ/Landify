@@ -10,10 +10,11 @@
     </mat-form-field>
     <mat-form-field appearance="outline" class="input-container">
       <mat-label>Descripción</mat-label>
-      <input matInput [(ngModel)]="data.description" />
+      <input matInput [(ngModel)]="data.body" />
     </mat-form-field>
     <button
       mat-flat-button
+      (click)="addPost()"
       color="primary"
       style="font-family: 'Inter'; font-weight: 600; height: 48px; width: 277px"
     >
