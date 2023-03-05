@@ -6,7 +6,6 @@ import { PostsService } from 'src/app/services/posts.service';
 import { User } from 'src/app/models/user.model';
 import { Post } from 'src/app/models/post.model';
 
-
 @Component({
   selector: 'app-posts',
   templateUrl: './posts.component.html',
@@ -20,42 +19,22 @@ import { Post } from 'src/app/models/post.model';
   ],
 })
 export class PostsComponent {
+  constructor(
+    private usersService: UsersService,
+    public dialog: MatDialog,
+  ){ }
+
   columnsToDisplay: string[] = ['Nombre', 'Username', 'Dirección', 'Correo', 'Phone Number'];
   columnsToDisplayWithExpand: string[] = [...this.columnsToDisplay, 'expand'];
   expandedElement!: User | null
   title!: string
   body!: string
-  users: User[] = [
-    {
-      'Nombre': "",
-      'Username': "",
-      'Dirección': "",
-      'Correo': "",
-      'Phone Number': "",
-      'Posts': [],
-      id: 0,
-    }
-  ]
-
-  constructor(
-    public dialog: MatDialog,
-    private usersService: UsersService,
-  ){ }
+  users: any[] = []
 
   ngOnInit(): void {
     this.usersService.getAllUsers()
-    .subscribe((data) =>{
-      this.users = data.map(element => {
-        return {
-          id: element.id,
-          'Nombre': element.name,
-          'Username': element.username,
-          'Dirección': element.address.street+', '+element.address.suite+', '+element.address.city,
-          'Correo': element.email,
-          'Phone Number': element.phone,
-          'Posts': [],
-        }
-      })
+    .subscribe((data) => {
+      this.users = data
     }
     )
   }
