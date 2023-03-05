@@ -60,7 +60,6 @@ export class PostsComponent {
     });
 
     dialogRef.afterClosed().subscribe((result) => {
-      console.log('The dialog was closed');
       this.body = result;
     });
   }

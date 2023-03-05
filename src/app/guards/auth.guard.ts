@@ -23,7 +23,6 @@ export class AuthGuard implements CanActivate {
       const now = new Date();
       const expiration = new Date(expirationDate);
       if (now < expiration) {
-        console.log(`${now} es menor a ${expiration} Paso el test`);
         return true;
       }
     }

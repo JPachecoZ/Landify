@@ -65,7 +65,6 @@ describe('PostsComponent', () => {
 
     it('should call getAllUsers on initialization', () => {
       expect(usersService.getAllUsers).toHaveBeenCalled();
-      console.log(component.users);
       expect(component.users).toEqual([user]);
     });
 
