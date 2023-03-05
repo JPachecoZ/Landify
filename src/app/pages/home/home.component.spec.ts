@@ -21,10 +21,25 @@ describe('HomeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HomeComponent, MainNavComponent, HeaderComponent, FooterComponent, MetricsComponent, MetricComponent, FeaturesComponent, FeatureComponent ],
-      imports: [ MatSidenavModule, BrowserAnimationsModule, MatButtonModule, MatToolbarModule, MatListModule, MatIconModule ]
-    })
-    .compileComponents();
+      declarations: [
+        HomeComponent,
+        MainNavComponent,
+        HeaderComponent,
+        FooterComponent,
+        MetricsComponent,
+        MetricComponent,
+        FeaturesComponent,
+        FeatureComponent,
+      ],
+      imports: [
+        MatSidenavModule,
+        BrowserAnimationsModule,
+        MatButtonModule,
+        MatToolbarModule,
+        MatListModule,
+        MatIconModule,
+      ],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(HomeComponent);
     component = fixture.componentInstance;

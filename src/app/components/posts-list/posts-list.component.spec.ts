@@ -3,7 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { PostsListComponent } from './posts-list.component';
 import { PostsService } from '../../services/posts.service';
 import { HttpClient, HttpHandler } from '@angular/common/http';
-import { of } from 'rxjs'
+import { of } from 'rxjs';
 
 describe('PostsListComponent', () => {
   let component: PostsListComponent;
@@ -13,10 +13,9 @@ describe('PostsListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PostsListComponent ],
-      providers: [ PostsService, HttpClient, HttpHandler ]
-    })
-    .compileComponents();
+      declarations: [PostsListComponent],
+      providers: [PostsService, HttpClient, HttpHandler],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(PostsListComponent);
     component = fixture.componentInstance;
@@ -24,37 +23,41 @@ describe('PostsListComponent', () => {
     userId = 1;
   });
 
-  describe('given a user with posts', () => {  
+  describe('given a user with posts', () => {
     beforeEach(() => {
-      spyOn(postsService, 'getPostsFromUserId').and.returnValue(of([{
-        userId: 1,
-        id: 1,
-        title: 'First Post',
-        body: 'This is the first post'
-      }, {
-        userId: 1,
-        id: 2,
-        title: 'Second Post',
-        body: 'This is the second post'
-      }]));
+      spyOn(postsService, 'getPostsFromUserId').and.returnValue(
+        of([
+          {
+            userId: 1,
+            id: 1,
+            title: 'First Post',
+            body: 'This is the first post',
+          },
+          {
+            userId: 1,
+            id: 2,
+            title: 'Second Post',
+            body: 'This is the second post',
+          },
+        ])
+      );
       spyOn(postsService, 'getLocalPostsFromUserId').and.returnValue(of([]));
       fixture.detectChanges();
-    })
+    });
     it('should display the posts', () => {
       const postTitles = fixture.nativeElement.querySelectorAll('.posts-title');
       expect(postTitles.length).toBe(2);
       expect(postTitles[0].textContent).toContain('First Post');
       expect(postTitles[1].textContent).toContain('Second Post');
-    })
-    it('should emit an event to open the create post dialog when user clicks the button', ()=>{
+    });
+    it('should emit an event to open the create post dialog when user clicks the button', () => {
       spyOn(component.openDialogEvent, 'emit');
       const button = fixture.nativeElement.querySelector('.create-post-button');
       button.click();
       expect(component.openDialogEvent.emit).toHaveBeenCalled();
-    })
+    });
   });
 
-  
   describe('Given a user with no posts', () => {
     beforeEach(() => {
       spyOn(postsService, 'getPostsFromUserId').and.returnValue(of([]));
@@ -73,33 +76,42 @@ describe('PostsListComponent', () => {
       expect(button.textContent).toContain('Crear un post');
     });
 
-    it('should emit an event to open the create post dialog when user clicks the button', ()=>{
+    it('should emit an event to open the create post dialog when user clicks the button', () => {
       spyOn(component.openDialogEvent, 'emit');
       const button = fixture.nativeElement.querySelector('.create-post-button');
       button.click();
       expect(component.openDialogEvent.emit).toHaveBeenCalled();
-    })
+    });
   });
 
   describe('Given the user has local posts', () => {
     beforeEach(() => {
-      spyOn(postsService, 'getPostsFromUserId').and.returnValue(of([{
-        userId: 1,
-        id: 1,
-        title: 'First Post',
-        body: 'This is the first post'
-      }, {
-        userId: 1,
-        id: 2,
-        title: 'Second Post',
-        body: 'This is the second post'
-      }]));
+      spyOn(postsService, 'getPostsFromUserId').and.returnValue(
+        of([
+          {
+            userId: 1,
+            id: 1,
+            title: 'First Post',
+            body: 'This is the first post',
+          },
+          {
+            userId: 1,
+            id: 2,
+            title: 'Second Post',
+            body: 'This is the second post',
+          },
+        ])
+      );
 
-      spyOn(postsService, 'getLocalPostsFromUserId').and.returnValue(of([{
-        userId: 1,
-        title: 'Local Post',
-        body: 'This is a local post'
-      }]));
+      spyOn(postsService, 'getLocalPostsFromUserId').and.returnValue(
+        of([
+          {
+            userId: 1,
+            title: 'Local Post',
+            body: 'This is a local post',
+          },
+        ])
+      );
       fixture.detectChanges();
     });
 

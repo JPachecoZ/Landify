@@ -1,9 +1,8 @@
-
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@use '@angular/material' as mat;
+@use "@angular/material" as mat;
 // Plus imports for other components in your app.
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
@@ -15,73 +14,83 @@
 // hue. Available color palettes: https://material.io/design/color/
 
 $custom-primary-palette: (
- 50: #f1e9fd,
- 100: #dac8fa,
- 200: #c1a3f7,
- 300: #a77bf5,
- 400: #925bf1,
- 500: #7c3aed,
- 600: #7035e6,
- 700: #602cdd,
- 800: #5025d7,
- 900: #3213ce,
- 
- contrast: (
-   50: rgba(black, 0.87),
-   100: rgba(black, 0.87),
-   200: rgba(black, 0.87),
-   300: white,
- )
+  50: #f1e9fd,
+  100: #dac8fa,
+  200: #c1a3f7,
+  300: #a77bf5,
+  400: #925bf1,
+  500: #7c3aed,
+  600: #7035e6,
+  700: #602cdd,
+  800: #5025d7,
+  900: #3213ce,
+
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: white,
+  ),
 );
 
 $custom-secondary-palette: (
- 50: #ede9fe,
- 100: #cfcaf7,
- 200: #b0a7ee,
- 300: #8e84e5,
- 400: #7369dd,
- 500: #5550d6,
- 600: #494bcf,
- 700: #3743c5,
- 800: #243dbd,
- 900: #0032ae,
- A100: #FFF,
- A200: #FFF,
- A400: #FFF,
- A700: #FFF,
- 
- contrast: (
-  50: rgba(black, 0.87),
-  100: rgba(black, 0.87),
-  200: rgba(black, 0.87),
-  300: white,
-)
+  50: #ede9fe,
+  100: #cfcaf7,
+  200: #b0a7ee,
+  300: #8e84e5,
+  400: #7369dd,
+  500: #5550d6,
+  600: #494bcf,
+  700: #3743c5,
+  800: #243dbd,
+  900: #0032ae,
+  A100: #fff,
+  A200: #fff,
+  A400: #fff,
+  A700: #fff,
+
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: white,
+  ),
 );
 
 $my-reto-primary: mat.define-palette($custom-primary-palette);
-$my-reto-accent: mat.define-palette($custom-secondary-palette, A100, A200, A400, A700);
+$my-reto-accent: mat.define-palette(
+  $custom-secondary-palette,
+  A100,
+  A200,
+  A400,
+  A700
+);
 
 // The warn palette is optional (defaults to red).
 $my-reto-warn: mat.define-palette(mat.$red-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$my-reto-theme: mat.define-light-theme((
-  color: (
-    primary: $my-reto-primary,
-    accent: $my-reto-accent,
-    warn: $my-reto-warn,
-  ),
-));
+$my-reto-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $my-reto-primary,
+      accent: $my-reto-accent,
+      warn: $my-reto-warn,
+    ),
+  )
+);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include mat.all-component-themes($my-reto-theme);
 
-
-html, body { height: 100%; }
-body { 
-  margin: 0; 
-  font-family: 'Inter', sans-serif; 
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
 }

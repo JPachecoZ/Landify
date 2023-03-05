@@ -4,18 +4,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Requirements
 
-To execute this project you will need to install the following development tools
-    - [Node.js and npm](https://nodejs.org/)
-    - [Angular CLI](https://cli/angular/io)
-    - [Angular Material](https://material.angular.io/)
-    - [Git](https://git-scm.com/)
+To execute this project you will need to install the following development tools - [Node.js and npm](https://nodejs.org/) - [Angular CLI](https://cli/angular/io) - [Angular Material](https://material.angular.io/) - [Git](https://git-scm.com/)
 
 ## Installation
 
 Open your terminal, navigate to the folder where you want to clone the project and:
 
 1. Clone the repository in your local machine running this code:
-   
+
    `git clone https://github.com/JPachecoZ/Landify.git`
 
 2. Run the following commands to install dependencies:
@@ -26,8 +22,8 @@ Open your terminal, navigate to the folder where you want to clone the project a
 
 4. To authenticate and navigate to the `/posts` route use these credentials:
 
-    email: javier@mail.com
-    password: 123456
+   email: javier@mail.com
+   password: 123456
 
 ## Running unit tests
 
