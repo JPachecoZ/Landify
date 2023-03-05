@@ -1,13 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { Post } from '../models/post.model';
 
 @Injectable({
   providedIn: 'root',
 })
 export class PostsService {
-  private apiURI = 'https://jsonplaceholder.typicode.com';
+  private apiURI = environment.baseURL;
   private localPosts: Post[] = [];
   private localPostsSubject = new BehaviorSubject<Post[]>(this.localPosts);
   constructor(private http: HttpClient) {}

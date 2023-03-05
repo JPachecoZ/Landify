@@ -4,7 +4,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Requirements
 
-To execute this project you will need to install the following development tools - [Node.js and npm](https://nodejs.org/) - [Angular CLI](https://cli/angular/io) - [Angular Material](https://material.angular.io/) - [Git](https://git-scm.com/)
+To execute this project you will need to install the following development tools:
+ - [Node.js](https://nodejs.org/) v18.14.2 or higher
+ - [npm](https://www.npmjs.com/) v9.5.0 or higher
+ - [Angular CLI](https://cli/angular/io) v15.2.1 or higher
+ - [Angular Material](https://material.angular.io/) v15.2.1 or higher
+ - [Git](https://git-scm.com/) v2.39.0 or higher
 
 ## Installation
 
@@ -24,6 +29,15 @@ Open your terminal, navigate to the folder where you want to clone the project a
 
    email: javier@mail.com
    password: 123456
+
+## Technologies
+
+1. Angular: Requirement of the project
+2. Typescript: Requirement of the framework
+3. SASS: Requirement of the project
+4. Angular Material
+5. Eslint: It's a tool that checks code in order to reduce redundancy and syntax errors.
+6. Prettier: It's a tool that checks files and erase unnecesary spaces and organize code to better review it.
 
 ## Running unit tests
 
