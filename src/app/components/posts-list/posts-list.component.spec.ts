@@ -9,7 +9,6 @@ describe('PostsListComponent', () => {
   let component: PostsListComponent;
   let fixture: ComponentFixture<PostsListComponent>;
   let postsService: PostsService;
-  let userId: number;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
@@ -20,7 +19,6 @@ describe('PostsListComponent', () => {
     fixture = TestBed.createComponent(PostsListComponent);
     component = fixture.componentInstance;
     postsService = TestBed.inject(PostsService);
-    userId = 1;
   });
 
   describe('given a user with posts', () => {

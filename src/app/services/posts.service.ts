@@ -7,7 +7,7 @@ import { Post } from '../models/post.model';
   providedIn: 'root',
 })
 export class PostsService {
-  private apiURI: string = 'https://jsonplaceholder.typicode.com';
+  private apiURI = 'https://jsonplaceholder.typicode.com';
   private localPosts: Post[] = [];
   private localPostsSubject = new BehaviorSubject<Post[]>(this.localPosts);
   constructor(private http: HttpClient) {}
@@ -17,7 +17,7 @@ export class PostsService {
   }
 
   getPostsFromUserId(id: number) {
-    return this.http.get<any[]>(`${this.apiURI}/users/${id}/posts`);
+    return this.http.get<Post[]>(`${this.apiURI}/users/${id}/posts`);
   }
 
   addPost(data: Post) {

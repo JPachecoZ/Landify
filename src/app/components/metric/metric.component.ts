@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./metric.component.sass'],
 })
 export class MetricComponent {
-  @Input() title: string = '';
-  @Input() description: string = '';
-  @Input() icon: string = '';
+  @Input() title!: string;
+  @Input() description!: string;
+  @Input() icon!: string;
 }

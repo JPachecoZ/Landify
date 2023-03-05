@@ -5,10 +5,10 @@ import { Router } from '@angular/router';
   providedIn: 'root',
 })
 export class SessionsService {
-  private expirationTime: number = 900000;
+  private expirationTime = 900000;
   constructor(private router: Router) {}
 
-  login(credentials: any) {
+  login(credentials: Partial<{ email: string | null; password: string | null; }>) {
     if (credentials.email === 'javier@mail.com') {
       console.log('Usuario Existe');
       if (credentials.password === '123456') {

@@ -45,6 +45,7 @@ export class PostsComponent {
   expandedElement!: User | null;
   title!: string;
   body!: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   users: any[] = [];
 
   ngOnInit(): void {

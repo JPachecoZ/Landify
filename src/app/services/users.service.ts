@@ -7,7 +7,7 @@ import { ReqResResponse } from '../models/reqres.model';
   providedIn: 'root',
 })
 export class UsersService {
-  private apiURI: string = 'https://jsonplaceholder.typicode.com/users';
+  private apiURI = 'https://jsonplaceholder.typicode.com/users';
   constructor(private http: HttpClient) {}
 
   getAllUsers() {

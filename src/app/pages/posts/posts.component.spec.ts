@@ -8,17 +8,16 @@ import {
 import { MatTableModule } from '@angular/material/table';
 import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { PostsService } from 'src/app/services/posts.service';
 import { UsersService } from 'src/app/services/users.service';
 import { HttpClient, HttpHandler } from '@angular/common/http';
 import { of } from 'rxjs';
-import { PostsComponent, CreatePostDialogComponent } from './posts.component';
+import { PostsComponent } from './posts.component';
 
 describe('PostsComponent', () => {
   let component: PostsComponent;
   let fixture: ComponentFixture<PostsComponent>;
   let usersService: UsersService;
-  let postsService: PostsService;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   let user: any;
 
   beforeEach(async () => {
@@ -33,7 +32,6 @@ describe('PostsComponent', () => {
       ],
       providers: [
         UsersService,
-        PostsService,
         HttpClient,
         HttpHandler,
         { provide: MAT_DIALOG_DATA, useValue: {} },
@@ -44,7 +42,6 @@ describe('PostsComponent', () => {
     fixture = TestBed.createComponent(PostsComponent);
     component = fixture.componentInstance;
     usersService = TestBed.inject(UsersService);
-    postsService = TestBed.inject(PostsService);
     user = {
       Nombre: 'John Doe',
       Username: 'johndoe',
