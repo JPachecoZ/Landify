@@ -1,7 +1,6 @@
 import { Component, Inject } from '@angular/core';
 import { MatDialog, MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog'
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { FormGroup, FormControl } from '@angular/forms';
 import { UsersService } from 'src/app/services/users.service';
 import { PostsService } from 'src/app/services/posts.service';
 import { User } from 'src/app/models/user.model';
