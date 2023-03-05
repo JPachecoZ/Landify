@@ -1,7 +1,8 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-metric',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './metric.component.html',
   styleUrls: ['./metric.component.sass'],
 })

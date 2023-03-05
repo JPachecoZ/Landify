@@ -1,7 +1,8 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-feature',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './feature.component.html',
   styleUrls: ['./feature.component.sass'],
 })
