@@ -1,0 +1,2949 @@
+{
+    "pipes": [],
+    "interfaces": [
+        {
+            "name": "Address",
+            "id": "interface-Address-d5f0a19dfcacb6d4bb4fb88d9ff19769f19599481d99f232682a4f2cbd92727bdad29da034fda5d3905926c7a93b106b685874ae86acd04ad30a8de41359f91d",
+            "file": "src/app/models/reqres.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface ReqResResponse {\n  id: number;\n  name: string;\n  username: string;\n  email: string;\n  address: Address;\n  phone: string;\n  website: string;\n  company: Company;\n}\n\nexport interface Address {\n  street: string;\n  suite: string;\n  city: string;\n  zipcode: string;\n  geo: Geo;\n}\n\nexport interface Geo {\n  lat: string;\n  lng: string;\n}\n\nexport interface Company {\n  name: string;\n  catchPhrase: string;\n  bs: string;\n}\n",
+            "properties": [
+                {
+                    "name": "city",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 15
+                },
+                {
+                    "name": "geo",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Geo",
+                    "optional": false,
+                    "description": "",
+                    "line": 17
+                },
+                {
+                    "name": "street",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 13
+                },
+                {
+                    "name": "suite",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 14
+                },
+                {
+                    "name": "zipcode",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 16
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "Company",
+            "id": "interface-Company-d5f0a19dfcacb6d4bb4fb88d9ff19769f19599481d99f232682a4f2cbd92727bdad29da034fda5d3905926c7a93b106b685874ae86acd04ad30a8de41359f91d",
+            "file": "src/app/models/reqres.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface ReqResResponse {\n  id: number;\n  name: string;\n  username: string;\n  email: string;\n  address: Address;\n  phone: string;\n  website: string;\n  company: Company;\n}\n\nexport interface Address {\n  street: string;\n  suite: string;\n  city: string;\n  zipcode: string;\n  geo: Geo;\n}\n\nexport interface Geo {\n  lat: string;\n  lng: string;\n}\n\nexport interface Company {\n  name: string;\n  catchPhrase: string;\n  bs: string;\n}\n",
+            "properties": [
+                {
+                    "name": "bs",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 28
+                },
+                {
+                    "name": "catchPhrase",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 27
+                },
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 26
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "Feature",
+            "id": "interface-Feature-13da79e1426f8ba5f6d64db42f7f3ef3b6f5066feb5afc915bd6d07751cd6631e7e7c215438969afb00c67bfc3012a0ab50cc3ed26ea499da9d3db961c37c0ef",
+            "file": "src/app/models/feature.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface Feature {\n  title: string;\n  description: string;\n  icon: string;\n}\n",
+            "properties": [
+                {
+                    "name": "description",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "icon",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "title",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "Geo",
+            "id": "interface-Geo-d5f0a19dfcacb6d4bb4fb88d9ff19769f19599481d99f232682a4f2cbd92727bdad29da034fda5d3905926c7a93b106b685874ae86acd04ad30a8de41359f91d",
+            "file": "src/app/models/reqres.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface ReqResResponse {\n  id: number;\n  name: string;\n  username: string;\n  email: string;\n  address: Address;\n  phone: string;\n  website: string;\n  company: Company;\n}\n\nexport interface Address {\n  street: string;\n  suite: string;\n  city: string;\n  zipcode: string;\n  geo: Geo;\n}\n\nexport interface Geo {\n  lat: string;\n  lng: string;\n}\n\nexport interface Company {\n  name: string;\n  catchPhrase: string;\n  bs: string;\n}\n",
+            "properties": [
+                {
+                    "name": "lat",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 21
+                },
+                {
+                    "name": "lng",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 22
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "Metric",
+            "id": "interface-Metric-65fb9f63afa651f5741fe67cc33cb505d81855b29c1b74fb35fd9cb8e545c9454d165bb44369596a56ac438a7340f0e10af0daf85052268c658af0587c185122",
+            "file": "src/app/models/metric.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface Metric {\n  title: string;\n  description: string;\n  icon: string;\n}\n",
+            "properties": [
+                {
+                    "name": "description",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "icon",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "title",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "Post",
+            "id": "interface-Post-e4ceba2f2cece6723455d00bc7a77c518ab7c9763867da460d8c0d74f6d6552a78cd6f48f8020cd10c66dd961bf34443e32970a2f77431a63b9de42e86e93142",
+            "file": "src/app/models/post.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface Post {\n  userId: number;\n  id?: number;\n  title: string;\n  body: string;\n}\n",
+            "properties": [
+                {
+                    "name": "body",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 5
+                },
+                {
+                    "name": "id",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": true,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "title",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "userId",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "ReqResResponse",
+            "id": "interface-ReqResResponse-d5f0a19dfcacb6d4bb4fb88d9ff19769f19599481d99f232682a4f2cbd92727bdad29da034fda5d3905926c7a93b106b685874ae86acd04ad30a8de41359f91d",
+            "file": "src/app/models/reqres.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface ReqResResponse {\n  id: number;\n  name: string;\n  username: string;\n  email: string;\n  address: Address;\n  phone: string;\n  website: string;\n  company: Company;\n}\n\nexport interface Address {\n  street: string;\n  suite: string;\n  city: string;\n  zipcode: string;\n  geo: Geo;\n}\n\nexport interface Geo {\n  lat: string;\n  lng: string;\n}\n\nexport interface Company {\n  name: string;\n  catchPhrase: string;\n  bs: string;\n}\n",
+            "properties": [
+                {
+                    "name": "address",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Address",
+                    "optional": false,
+                    "description": "",
+                    "line": 6
+                },
+                {
+                    "name": "company",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Company",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                },
+                {
+                    "name": "email",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 5
+                },
+                {
+                    "name": "id",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "phone",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 7
+                },
+                {
+                    "name": "username",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "website",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 8
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "User",
+            "id": "interface-User-9c7e5f1bbbab702cb032307d130876cb68969b0cd4eedef32a0c8cad8081a54e5f8f577ed6ad4539c1b99a1d246cb34031d198c2ea8eba440e64e91b14f01fdc",
+            "file": "src/stories/User.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface User {}\n",
+            "properties": [],
+            "indexSignatures": [],
+            "methods": []
+        },
+        {
+            "name": "User",
+            "id": "interface-User-a1401a4e0d92c1f785d09a344ed8a1663478473dbcb9205ba8cc6aedeff96c400f007035c90f73a17303deb4757076d2861514e009192f9c547a202f3d2338ed-1",
+            "file": "src/app/models/user.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface User {\n  id: number;\n  Nombre: string;\n  Username: string;\n  Dirección: string;\n  Correo: string;\n  'Phone Number': string;\n  Posts: [];\n}\n",
+            "properties": [
+                {
+                    "name": "Correo",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 6
+                },
+                {
+                    "name": "Dirección",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 5
+                },
+                {
+                    "name": "id",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "Nombre",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "Phone Number",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 7
+                },
+                {
+                    "name": "Posts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 8
+                },
+                {
+                    "name": "Username",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": [],
+            "isDuplicate": true,
+            "duplicateId": 1,
+            "duplicateName": "User-1"
+        }
+    ],
+    "injectables": [
+        {
+            "name": "PostsService",
+            "id": "injectable-PostsService-d5609afbd00a613014f9e920efc39e89b47a454f8e382f840e7b3daf663eda5bf06b13d190df47693ee4bd871206d872746d73652ea4ddd9309c76b075cad32b",
+            "file": "src/app/services/posts.service.ts",
+            "properties": [
+                {
+                    "name": "apiURI",
+                    "defaultValue": "environment.baseURL",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 11,
+                    "modifierKind": [
+                        121
+                    ]
+                },
+                {
+                    "name": "localPosts",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Post[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 12,
+                    "modifierKind": [
+                        121
+                    ]
+                },
+                {
+                    "name": "localPostsSubject",
+                    "defaultValue": "new BehaviorSubject<Post[]>(this.localPosts)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 13,
+                    "modifierKind": [
+                        121
+                    ]
+                }
+            ],
+            "methods": [
+                {
+                    "name": "addPost",
+                    "args": [
+                        {
+                            "name": "data",
+                            "type": "Post",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "any",
+                    "typeParameters": [],
+                    "line": 24,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "data",
+                            "type": "Post",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "getLocalPostsFromUserId",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "any",
+                    "typeParameters": [],
+                    "line": 16,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "getPostsFromUserId",
+                    "args": [
+                        {
+                            "name": "id",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "any",
+                    "typeParameters": [],
+                    "line": 20,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "id",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { HttpClient } from '@angular/common/http';\nimport { Injectable } from '@angular/core';\nimport { BehaviorSubject } from 'rxjs';\nimport { environment } from 'src/environments/environment';\nimport { Post } from '../models/post.model';\n\n@Injectable({\n  providedIn: 'root',\n})\nexport class PostsService {\n  private apiURI = environment.baseURL;\n  private localPosts: Post[] = [];\n  private localPostsSubject = new BehaviorSubject<Post[]>(this.localPosts);\n  constructor(private http: HttpClient) {}\n\n  getLocalPostsFromUserId() {\n    return this.localPostsSubject.asObservable();\n  }\n\n  getPostsFromUserId(id: number) {\n    return this.http.get<Post[]>(`${this.apiURI}/users/${id}/posts`);\n  }\n\n  addPost(data: Post) {\n    this.localPosts.unshift(data);\n    this.localPostsSubject.next(this.localPosts);\n    return this.http.post<Post>(`${this.apiURI}/posts`, data);\n  }\n}\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "http",
+                        "type": "HttpClient",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 13,
+                "jsdoctags": [
+                    {
+                        "name": "http",
+                        "type": "HttpClient",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "type": "injectable"
+        },
+        {
+            "name": "SessionsService",
+            "id": "injectable-SessionsService-63b8cc4de5b045732592058436a51ebf741451356ab3a7fa6eec69e42c86d2ace5363cd02f3e8e13790aaa2df4f0a255259b68c6faa4fb101a82ddf74a1a0ada",
+            "file": "src/app/services/sessions.service.ts",
+            "properties": [
+                {
+                    "name": "expirationTime",
+                    "defaultValue": "900000",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 8,
+                    "modifierKind": [
+                        121
+                    ]
+                }
+            ],
+            "methods": [
+                {
+                    "name": "login",
+                    "args": [
+                        {
+                            "name": "credentials",
+                            "type": "Partial<literal type>",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 11,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "credentials",
+                            "type": "Partial<literal type>",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\nimport { Router } from '@angular/router';\n\n@Injectable({\n  providedIn: 'root',\n})\nexport class SessionsService {\n  private expirationTime = 900000;\n  constructor(private router: Router) {}\n\n  login(credentials: Partial<{ email: string | null; password: string | null; }>) {\n    if (credentials.email === 'javier@mail.com') {\n      if (credentials.password === '123456') {\n        const token = 'EL_TOKEN_MAS_DIFICIL';\n        const now = new Date();\n        const expirationDate = new Date(now.getTime() + this.expirationTime);\n        localStorage.setItem('token', token);\n        localStorage.setItem('expirationDate', expirationDate.toISOString());\n        this.router.navigate(['/posts']);\n      } else {\n        alert('Password invalido');\n      }\n    } else {\n      alert('Usuario no registrado');\n    }\n  }\n}\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "router",
+                        "type": "Router",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 8,
+                "jsdoctags": [
+                    {
+                        "name": "router",
+                        "type": "Router",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "type": "injectable"
+        },
+        {
+            "name": "UsersService",
+            "id": "injectable-UsersService-1c4a6f9b7f73954521514daac884079be2743bff24aa0907eb63fab0820325d3af09a15f289558e310d9551a6101073a3e752d9fef03d183dea6ca06a5e5e7f8",
+            "file": "src/app/services/users.service.ts",
+            "properties": [
+                {
+                    "name": "apiURI",
+                    "defaultValue": "environment.baseURL",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 11,
+                    "modifierKind": [
+                        121
+                    ]
+                }
+            ],
+            "methods": [
+                {
+                    "name": "getAllUsers",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "any",
+                    "typeParameters": [],
+                    "line": 14,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { HttpClient } from '@angular/common/http';\nimport { Injectable } from '@angular/core';\nimport { map } from 'rxjs';\nimport { ReqResResponse } from '../models/reqres.model';\nimport { environment } from 'src/environments/environment';\n\n@Injectable({\n  providedIn: 'root',\n})\nexport class UsersService {\n  private apiURI = environment.baseURL;\n  constructor(private http: HttpClient) {}\n\n  getAllUsers() {\n    return this.http.get<ReqResResponse[]>(`${this.apiURI}/users`).pipe(\n      map((response) => {\n        return response.map((user) => {\n          return {\n            id: user.id,\n            Nombre: user.name,\n            Username: user.username,\n            Dirección:\n              user.address.street +\n              ', ' +\n              user.address.suite +\n              ', ' +\n              user.address.city,\n            Correo: user.email,\n            'Phone Number': user.phone,\n            Posts: [],\n          };\n        });\n      })\n    );\n  }\n}\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "http",
+                        "type": "HttpClient",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 11,
+                "jsdoctags": [
+                    {
+                        "name": "http",
+                        "type": "HttpClient",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "type": "injectable"
+        }
+    ],
+    "guards": [
+        {
+            "name": "AuthGuard",
+            "id": "injectable-AuthGuard-4607643ed483a952afb6736eb4ff7ff5e53a6ceaa97bf5234dc97fd9e0ab41d562ea7cfbd9108b82fe01b1d4ee531583cfe62540a71bebdd65f9ec1290418eb5",
+            "file": "src/app/guards/auth.guard.ts",
+            "properties": [],
+            "methods": [
+                {
+                    "name": "canActivate",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Observable | Promise | boolean | UrlTree",
+                    "typeParameters": [],
+                    "line": 15,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\nimport {\n  CanActivate,\n  Router,\n  UrlTree,\n} from '@angular/router';\nimport { Observable } from 'rxjs';\n\n@Injectable({\n  providedIn: 'root',\n})\nexport class AuthGuard implements CanActivate {\n  constructor(private router: Router) {}\n\n  canActivate():\n    | Observable<boolean | UrlTree>\n    | Promise<boolean | UrlTree>\n    | boolean\n    | UrlTree {\n    const token = localStorage.getItem('token');\n    const expirationDate = localStorage.getItem('expirationDate');\n    if (token && expirationDate) {\n      const now = new Date();\n      const expiration = new Date(expirationDate);\n      if (now < expiration) {\n        return true;\n      }\n    }\n    this.router.navigate(['/login']);\n    return false;\n  }\n}\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "router",
+                        "type": "Router",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 12,
+                "jsdoctags": [
+                    {
+                        "name": "router",
+                        "type": "Router",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "type": "guard"
+        }
+    ],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-461531752f39863fa3584cc835b1df6bdc2862458996e5ded631019cd4e58676ad861e525eba5906e6746361f2d78efa5d740450a01d7b135f6822741375f243",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<router-outlet></router-outlet>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "title",
+                    "defaultValue": "'my-reto'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 7
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n@Component({\n  selector: 'app-root',\n  template: '<router-outlet></router-outlet>',\n})\nexport class AppComponent {\n  title = 'my-reto';\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": ""
+        },
+        {
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-4ef205c97a334c309aa4001c8ab4a6d9571dcae18d0e85aaf0d367467ab5d3a9f13ab3573726f1fcb409bc9b49894dadfb80b1bbe1b6ba7041455ad9d4922004",
+            "file": "src/stories/button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-button",
+            "styleUrls": [
+                "./button.css"
+            ],
+            "styles": [],
+            "template": "<button   type=\"button\"\n   (click)=\"onClick.emit($event)\"\n   [ngClass]=\"classes\"\n   [ngStyle]=\"{ 'background-color': backgroundColor }\"\n >\n   {{ label }}\n </button>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "backgroundColor",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nWhat background color to use\n",
+                    "description": "<p>What background color to use</p>\n",
+                    "line": 26,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "'Button'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "pos": 711,
+                            "end": 724,
+                            "flags": 4227072,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 325,
+                            "tagName": {
+                                "pos": 712,
+                                "end": 720,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "required"
+                            },
+                            "comment": ""
+                        }
+                    ],
+                    "rawdescription": "\n\nButton contents\n\n",
+                    "description": "<p>Button contents</p>\n",
+                    "line": 40,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "primary",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nIs this the principal call to action on the page?\n",
+                    "description": "<p>Is this the principal call to action on the page?</p>\n",
+                    "line": 20,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'medium'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nHow large should the button be?\n",
+                    "description": "<p>How large should the button be?</p>\n",
+                    "line": 32,
+                    "type": "\"small\" | \"medium\" | \"large\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onClick",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nOptional click handler\n",
+                    "description": "<p>Optional click handler</p>\n",
+                    "line": 46,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-button',\n  template: ` <button\n    type=\"button\"\n    (click)=\"onClick.emit($event)\"\n    [ngClass]=\"classes\"\n    [ngStyle]=\"{ 'background-color': backgroundColor }\"\n  >\n    {{ label }}\n  </button>`,\n  styleUrls: ['./button.css'],\n})\nexport default class ButtonComponent {\n  /**\n   * Is this the principal call to action on the page?\n   */\n  @Input()\n  primary = false;\n\n  /**\n   * What background color to use\n   */\n  @Input()\n  backgroundColor?: string;\n\n  /**\n   * How large should the button be?\n   */\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input()\n  label = 'Button';\n\n  /**\n   * Optional click handler\n   */\n  @Output()\n  onClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\n\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".storybook-button {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-weight: 700;\n  border: 0;\n  border-radius: 3em;\n  cursor: pointer;\n  display: inline-block;\n  line-height: 1;\n}\n.storybook-button--primary {\n  color: white;\n  background-color: #1ea7fd;\n}\n.storybook-button--secondary {\n  color: #333;\n  background-color: transparent;\n  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;\n}\n.storybook-button--small {\n  font-size: 12px;\n  padding: 10px 16px;\n}\n.storybook-button--medium {\n  font-size: 14px;\n  padding: 11px 20px;\n}\n.storybook-button--large {\n  font-size: 16px;\n  padding: 12px 24px;\n}\n",
+                    "styleUrl": "./button.css"
+                }
+            ],
+            "stylesData": "",
+            "accessors": {
+                "classes": {
+                    "name": "classes",
+                    "getSignature": {
+                        "name": "classes",
+                        "type": "[]",
+                        "returnType": "string[]",
+                        "line": 48
+                    }
+                }
+            }
+        },
+        {
+            "name": "CreatePostDialogComponent",
+            "id": "component-CreatePostDialogComponent-e53d06f836f2f530ccc7bdb55f1548a96b284b9733fc28e5452714da68fac885b61d2fdf0ed0a5bd3428a8464a73645dc4bb2fe4b2704ed00a4989f522814055",
+            "file": "src/app/pages/posts/posts.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-create-post-dialog",
+            "styleUrls": [
+                "./create-post-dialog.sass"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./create-post-dialog.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "data",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Post",
+                    "optional": false,
+                    "description": "",
+                    "line": 77,
+                    "decorators": [
+                        {
+                            "name": "Inject",
+                            "stringifiedArguments": "MAT_DIALOG_DATA"
+                        }
+                    ],
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "dialogRef",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "MatDialogRef<CreatePostDialogComponent>",
+                    "optional": false,
+                    "description": "",
+                    "line": 75,
+                    "modifierKind": [
+                        123
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "addPost",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 84,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "onNoClick",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 80,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Inject } from '@angular/core';\nimport {\n  MatDialog,\n  MAT_DIALOG_DATA,\n  MatDialogRef,\n} from '@angular/material/dialog';\nimport {\n  animate,\n  state,\n  style,\n  transition,\n  trigger,\n} from '@angular/animations';\nimport { UsersService } from 'src/app/services/users.service';\nimport { PostsService } from 'src/app/services/posts.service';\nimport { User } from 'src/app/models/user.model';\nimport { Post } from 'src/app/models/post.model';\n\n@Component({\n  selector: 'app-posts',\n  templateUrl: './posts.component.html',\n  styleUrls: ['./posts.component.sass'],\n  animations: [\n    trigger('detailExpand', [\n      state('collapsed', style({ height: '0px', minHeight: '0' })),\n      state('expanded', style({ height: '*' })),\n      transition(\n        'expanded <=> collapsed',\n        animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')\n      ),\n    ]),\n  ],\n})\nexport class PostsComponent {\n  constructor(private usersService: UsersService, public dialog: MatDialog) {}\n\n  columnsToDisplay: string[] = [\n    'Nombre',\n    'Username',\n    'Dirección',\n    'Correo',\n    'Phone Number',\n  ];\n  columnsToDisplayWithExpand: string[] = [...this.columnsToDisplay, 'expand'];\n  expandedElement!: User | null;\n  title!: string;\n  body!: string;\n  // eslint-disable-next-line @typescript-eslint/no-explicit-any\n  users: any[] = [];\n\n  ngOnInit(): void {\n    this.usersService.getAllUsers().subscribe((data) => {\n      this.users = data;\n    });\n  }\n\n  openDialog(userId: number): void {\n    const dialogRef = this.dialog.open(CreatePostDialogComponent, {\n      data: { title: this.title, body: this.body, userId: userId },\n    });\n\n    dialogRef.afterClosed().subscribe((result) => {\n      this.body = result;\n    });\n  }\n}\n\n@Component({\n  selector: 'app-create-post-dialog',\n  templateUrl: './create-post-dialog.html',\n  styleUrls: ['./create-post-dialog.sass'],\n})\nexport class CreatePostDialogComponent {\n  constructor(\n    public dialogRef: MatDialogRef<CreatePostDialogComponent>,\n    private postsService: PostsService,\n    @Inject(MAT_DIALOG_DATA) public data: Post\n  ) {}\n\n  onNoClick(): void {\n    this.dialogRef.close();\n  }\n\n  addPost() {\n    this.postsService\n      .addPost({\n        title: this.data.title,\n        body: this.data.body,\n        userId: this.data.userId,\n      })\n      .subscribe((response) => {\n        console.log(`Post Saved as ${response}`);\n      });\n    this.onNoClick();\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".dialog-container\r\n    width: 640px\r\n\r\n.close-container\r\n    width: 100%\r\n    display: flex\r\n    justify-content: flex-end\r\n    padding-top: 30px\r\n    padding-right: 30px\r\n    .close-button\r\n        cursor: pointer\r\n        color: #626262\r\n\r\n.input-container\r\n    width: 100%\r\n    &:last-of-type\r\n        margin-bottom: 118px\r\n\r\np\r\n    margin-bottom: 38.5px\r\n    padding: 0px 58px\r\n\r\n.form-container\r\n    width: 100%\r\n    padding: 5px 58px\r\n    display: flex\r\n    flex-direction: column\r\n    align-items: center\r\n    margin-bottom: 60px\r\n    input\r\n        width: 100%\r\n",
+                    "styleUrl": "./create-post-dialog.sass"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "dialogRef",
+                        "type": "MatDialogRef<CreatePostDialogComponent>",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    },
+                    {
+                        "name": "postsService",
+                        "type": "PostsService",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    },
+                    {
+                        "name": "data",
+                        "type": "Post",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 73,
+                "jsdoctags": [
+                    {
+                        "name": "dialogRef",
+                        "type": "MatDialogRef<CreatePostDialogComponent>",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "postsService",
+                        "type": "PostsService",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "data",
+                        "type": "Post",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "templateData": "<div class=\"dialog-container\">\n  <div mat-dialog-actions class=\"close-container\">\n    <mat-icon (click)=\"onNoClick()\" class=\"close-button\">close</mat-icon>\n  </div>\n  <p mat-dialog-title>Crear Post</p>\n  <div mat-dialog-content class=\"form-container\">\n    <mat-form-field appearance=\"outline\" class=\"input-container\">\n      <mat-label>Título</mat-label>\n      <input matInput [(ngModel)]=\"data.title\" />\n    </mat-form-field>\n    <mat-form-field appearance=\"outline\" class=\"input-container\">\n      <mat-label>Descripción</mat-label>\n      <input matInput [(ngModel)]=\"data.body\" />\n    </mat-form-field>\n    <button\n      mat-flat-button\n      (click)=\"addPost()\"\n      color=\"primary\"\n      style=\"font-family: 'Inter'; font-weight: 600; height: 48px; width: 277px\"\n    >\n      Guardar\n    </button>\n  </div>\n</div>\n"
+        },
+        {
+            "name": "FeatureComponent",
+            "id": "component-FeatureComponent-dfb89f4d392eab022c4c1e8924cc8afb50dfd6a2238350f9ff21c77521b29d7918eb83629be66f800dead76a0ee99154dcc2406049124c48a42ee57d9edf7749",
+            "file": "src/app/components/feature/feature.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-feature",
+            "styleUrls": [
+                "./feature.component.sass"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./feature.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "description",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "icon",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "title",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, ChangeDetectionStrategy } from '@angular/core';\n\n@Component({\n  selector: 'app-feature',\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  templateUrl: './feature.component.html',\n  styleUrls: ['./feature.component.sass'],\n})\nexport class FeatureComponent {\n  @Input() title!: string;\n  @Input() description!: string;\n  @Input() icon!: string;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".container\r\n    max-width: 384px\r\n    justify-self: center\r\n    display: flex\r\n    flex-direction: column\r\n    align-items: center\r\n\r\n.icon\r\n    width: 32px\r\n    height: 32px\r\n    margin-bottom: 24px\r\n\r\n.title\r\n    font-weight: 700\r\n    font-size: 30px\r\n    line-height: 40px\r\n    text-align: center\r\n    margin-bottom: 8px\r\n\r\n.description\r\n    font-weight: 400\r\n    font-size: 16px\r\n    line-height: 24px\r\n    text-align: center\r\n",
+                    "styleUrl": "./feature.component.sass"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<div class=\"container\">\n  <img class=\"icon\" [src]=\"icon\" alt=\"icon\" />\n  <p class=\"title\">{{ title }}</p>\n  <p class=\"description\">{{ description }}</p>\n</div>\n"
+        },
+        {
+            "name": "FeaturesComponent",
+            "id": "component-FeaturesComponent-163ba654992153cf1608e8972217f41938146c3f9733a0e40ff8cd59fc4dcd7232195f7b6f2b774acc04dcbc073f1f9b3b7741f2ad5fe51806fc34d624799a8e",
+            "file": "src/app/components/features/features.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-features",
+            "styleUrls": [
+                "./features.component.sass"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./features.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "features",
+                    "defaultValue": "[\n    {\n      title: 'Robust workflow',\n      description:\n        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.',\n      icon: '../../assets/RobustWorkflow.svg',\n    },\n    {\n      title: 'Flexibility',\n      description:\n        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.',\n      icon: '../../assets/Flexibility.svg',\n    },\n    {\n      title: 'User friendly',\n      description:\n        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.',\n      icon: '../../assets/UserFriendly.svg',\n    },\n    {\n      title: 'Multiple layouts',\n      description:\n        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.',\n      icon: '../../assets/MultipleLayouts.svg',\n    },\n    {\n      title: 'Better components',\n      description:\n        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.',\n      icon: '../../assets/BetterComponents.svg',\n    },\n    {\n      title: 'Well organised',\n      description:\n        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.',\n      icon: '../../assets/WellOrganised.svg',\n    },\n  ]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Feature[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 10
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { Feature } from 'src/app/models/feature.model';\n\n@Component({\n  selector: 'app-features',\n  templateUrl: './features.component.html',\n  styleUrls: ['./features.component.sass'],\n})\nexport class FeaturesComponent {\n  features: Feature[] = [\n    {\n      title: 'Robust workflow',\n      description:\n        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.',\n      icon: '../../assets/RobustWorkflow.svg',\n    },\n    {\n      title: 'Flexibility',\n      description:\n        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.',\n      icon: '../../assets/Flexibility.svg',\n    },\n    {\n      title: 'User friendly',\n      description:\n        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.',\n      icon: '../../assets/UserFriendly.svg',\n    },\n    {\n      title: 'Multiple layouts',\n      description:\n        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.',\n      icon: '../../assets/MultipleLayouts.svg',\n    },\n    {\n      title: 'Better components',\n      description:\n        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.',\n      icon: '../../assets/BetterComponents.svg',\n    },\n    {\n      title: 'Well organised',\n      description:\n        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.',\n      icon: '../../assets/WellOrganised.svg',\n    },\n  ];\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@media only screen and (max-width: 540px)\r\n    .container\r\n        margin: 0 20px\r\n    .features-container\r\n        display: grid\r\n        grid-template-columns: 1fr\r\n        gap: 46px\r\n\r\n@media only screen and (min-width: 540px)\r\n    .container\r\n        margin: 0 40px\r\n    .features-container\r\n        display: grid\r\n        grid-template-columns: 1fr 1fr\r\n        gap: 46px\r\n\r\n@media only screen and (min-width: 1440px)\r\n    .container\r\n        margin: 0 112px\r\n    .features-container\r\n        display: grid\r\n        grid-template-columns: 1fr 1fr 1fr\r\n        gap: 46px\r\n\r\n.container\r\n    display: flex\r\n    flex-direction: column\r\n    align-items: center\r\n    margin-bottom: 176px\r\n\r\n.title\r\n    font-weight: 700\r\n    font-size: 48px\r\n    line-height: 60px\r\n    text-align: center\r\n    margin-bottom: 8px\r\n\r\n.description\r\n    font-weight: 400\r\n    font-size: 18px\r\n    line-height: 28px\r\n    text-align: center\r\n    margin-bottom: 64px\r\n",
+                    "styleUrl": "./features.component.sass"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<div class=\"container\">\n  <p class=\"title\">Tailor-made features</p>\n  <p class=\"description\">\n    Lorem ipsum is common placeholder text used to demonstrate the graphic\n    elements of a document or visual presentation.\n  </p>\n  <div class=\"features-container\">\n    <app-feature\n      *ngFor=\"let feature of features\"\n      [title]=\"feature.title\"\n      [description]=\"feature.description\"\n      [icon]=\"feature.icon\"\n    ></app-feature>\n  </div>\n</div>\n"
+        },
+        {
+            "name": "FooterComponent",
+            "id": "component-FooterComponent-452faa2fb4e53be74b6261cb7e5f118e0ba6f6a8e3fd7251198be7e45910408a59750f0199dacede68d58a428fd5fbde1ed742ad9f8b9e270f9a8e98cd3e7255",
+            "file": "src/app/components/footer/footer.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-footer",
+            "styleUrls": [
+                "./footer.component.sass"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./footer.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-footer',\n  templateUrl: './footer.component.html',\n  styleUrls: ['./footer.component.sass'],\n})\nexport class FooterComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@media only screen and (max-width: 540px)\r\n    .container\r\n        margin: 0 20px\r\n        justify-content: space-between\r\n        flex-direction: column\r\n        gap: 32px\r\n\r\n    .right-section\r\n        display: none\r\n    .link-group\r\n        flex-wrap: wrap\r\n\r\n@media only screen and (min-width: 540px)\r\n    .container\r\n        margin: 0 40px\r\n        justify-content: space-between\r\n        flex-direction: row\r\n        gap: 0px\r\n    .right-section\r\n        display: none\r\n    .link-group\r\n        flex-wrap: no-wrap\r\n\r\n@media only screen and (min-width: 1440px)\r\n    .container\r\n        margin: 0 112px\r\n        justify-content: space-evenly\r\n        flex-direction: row\r\n        gap: 0px\r\n    .right-section\r\n        display: block\r\n    .link-group\r\n        flex-wrap: no-wrap\r\n\r\n.container\r\n    display: flex\r\n    padding: 64px 0px\r\n\r\n.link-group\r\n    display: flex\r\n    margin: 12px 0px\r\n    gap: 12px\r\n\r\n.download-badges\r\n    display: flex\r\n    flex-direction: column\r\n    gap: 16.87px\r\n\r\n.logo-mark\r\n    margin-bottom: 12px\r\n\r\n.bg\r\n    background: #000000\r\n\r\n.store-link\r\n    max-width: 133px\r\n.title\r\n    font-weight: 500\r\n    font-size: 18px\r\n    line-height: 28px\r\n    color: #D1D5DB\r\n\r\n.copyright\r\n    font-weight: 400\r\n    font-size: 14px\r\n    line-height: 20px\r\n    color: #D1D5DB\r\n    margin-top: 24px\r\n\r\n.footer\r\n    font-weight: 400\r\n    font-size: 16px\r\n    line-height: 24px\r\n    color: #FFFFFF\r\n    margin-right: 12px\r\n",
+                    "styleUrl": "./footer.component.sass"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<div class=\"bg\">\n  <div class=\"container\">\n    <div class=\"left-section\">\n      <img src=\"../../assets/Logomark.svg\" alt=\"\" class=\"logo-mark\" />\n      <div class=\"link-group\">\n        <p class=\"footer\">Download Now</p>\n        <p class=\"footer\">License</p>\n      </div>\n      <div class=\"link-group\">\n        <p class=\"footer\">About</p>\n        <p class=\"footer\">Features</p>\n        <p class=\"footer\">Pricing</p>\n        <p class=\"footer\">News</p>\n        <p class=\"footer\">Help</p>\n        <p class=\"footer\">Contact</p>\n      </div>\n      <p class=\"copyright\">© 2021 Landify UI Kit. All rights reserved</p>\n    </div>\n    <div class=\"right-section\">\n      <img src=\"../../assets/Logomark.svg\" alt=\"\" class=\"logo-mark\" />\n      <div class=\"link-group\">\n        <p class=\"footer\">Contáctanos</p>\n      </div>\n      <div class=\"link-group\">\n        <p class=\"footer\">Whatsapps</p>\n        <p class=\"footer\">978 566 567</p>\n        <p class=\"footer\">967 567 565</p>\n      </div>\n      <p class=\"copyright\">© 2021 Landify UI Kit. All rights reserved</p>\n    </div>\n    <div class=\"download-badges\">\n      <p class=\"title\">Get the App</p>\n      <img src=\"../../assets/AppStore.svg\" alt=\"\" class=\"store-link\" />\n      <img src=\"../../assets/PlayStore.svg\" alt=\"\" class=\"store-link\" />\n    </div>\n  </div>\n</div>\n"
+        },
+        {
+            "name": "HeaderComponent",
+            "id": "component-HeaderComponent-a557eec14f72c438a8033301f4d6ce023e0a1844a3b06ec2b38794a612acc31735ae78a5ee10071b230c8c20d699eb914554e69d07ade54adb371da8efb464cc",
+            "file": "src/stories/header.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-header",
+            "styleUrls": [
+                "./header.css"
+            ],
+            "styles": [],
+            "template": "<header>    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <div *ngIf=\"user\">\n          <span class=\"welcome\">\n            Welcome, <b>{{ user.name }}</b\n            >!\n          </span>\n          <storybook-button\n            *ngIf=\"user\"\n            size=\"small\"\n            (onClick)=\"onLogout.emit($event)\"\n            label=\"Log out\"\n          ></storybook-button>\n        </div>\n        <div *ngIf=\"!user\">\n          <storybook-button\n            *ngIf=\"!user\"\n            size=\"small\"\n            class=\"margin-left\"\n            (onClick)=\"onLogin.emit($event)\"\n            label=\"Log in\"\n          ></storybook-button>\n          <storybook-button\n            *ngIf=\"!user\"\n            primary\n            size=\"small\"\n            primary=\"true\"\n            class=\"margin-left\"\n            (onClick)=\"onCreateAccount.emit($event)\"\n            label=\"Sign up\"\n          ></storybook-button>\n        </div>\n      </div>\n    </div>\n  </header>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 65,
+                    "type": "User | null",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onCreateAccount",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 74,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogin",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 68,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogout",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 71,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\nimport { User } from './User';\n\n@Component({\n  selector: 'storybook-header',\n  template: `<header>\n    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <div *ngIf=\"user\">\n          <span class=\"welcome\">\n            Welcome, <b>{{ user.name }}</b\n            >!\n          </span>\n          <storybook-button\n            *ngIf=\"user\"\n            size=\"small\"\n            (onClick)=\"onLogout.emit($event)\"\n            label=\"Log out\"\n          ></storybook-button>\n        </div>\n        <div *ngIf=\"!user\">\n          <storybook-button\n            *ngIf=\"!user\"\n            size=\"small\"\n            class=\"margin-left\"\n            (onClick)=\"onLogin.emit($event)\"\n            label=\"Log in\"\n          ></storybook-button>\n          <storybook-button\n            *ngIf=\"!user\"\n            primary\n            size=\"small\"\n            primary=\"true\"\n            class=\"margin-left\"\n            (onClick)=\"onCreateAccount.emit($event)\"\n            label=\"Sign up\"\n          ></storybook-button>\n        </div>\n      </div>\n    </div>\n  </header>`,\n  styleUrls: ['./header.css'],\n})\nexport default class HeaderComponent {\n  @Input()\n  user: User | null = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".wrapper {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.1);\n  padding: 15px 20px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\nsvg {\n  display: inline-block;\n  vertical-align: top;\n}\n\nh1 {\n  font-weight: 900;\n  font-size: 20px;\n  line-height: 1;\n  margin: 6px 0 6px 10px;\n  display: inline-block;\n  vertical-align: top;\n}\n\nbutton + button {\n  margin-left: 10px;\n}\n\n.welcome {\n  color: #333;\n  font-size: 14px;\n  margin-right: 10px;\n}\n",
+                    "styleUrl": "./header.css"
+                }
+            ],
+            "stylesData": ""
+        },
+        {
+            "name": "HeaderComponent",
+            "id": "component-HeaderComponent-336c31df494afdd6781d827cba0faa643fe7ccf854cea1392c9ffd948479a3686fcdfaeae7f01c0d8ac596535903ff5d5954fa1dfa3329063702ac112c7117c0-1",
+            "file": "src/app/components/header/header.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-header",
+            "styleUrls": [
+                "./header.component.sass"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./header.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-header',\n  templateUrl: './header.component.html',\n  styleUrls: ['./header.component.sass'],\n})\nexport class HeaderComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@media only screen and (max-width: 540px)\r\n    .container\r\n        display: flex\r\n        margin: 74px 20px\r\n        flex-direction: column\r\n        align-items: center\r\n        justify-content: center\r\n    .title\r\n        font-weight: 700\r\n        font-size: 36px\r\n        line-height: 45px\r\n    .content\r\n        max-width: 648px\r\n        margin-top: 48px\r\n        margin-right: 0px\r\n        margin-bottom: 80px\r\n@media only screen and (min-width: 540px)\r\n    .container\r\n        display: flex\r\n        margin: 74px 40px\r\n        flex-direction: column\r\n        align-items: center\r\n        justify-content: center\r\n    .title\r\n        font-weight: 700\r\n        font-size: 48px\r\n        line-height: 60px\r\n    .content\r\n        max-width: 648px\r\n        margin-top: 80px\r\n        margin-right: 0px\r\n        margin-bottom: 80px\r\n@media only screen and (min-width: 1440px)\r\n    .container\r\n        display: flex\r\n        margin: 74px 112px\r\n        flex-direction: row\r\n        align-items: flex-start\r\n        justify-content: center\r\n    .title\r\n        font-weight: 700\r\n        font-size: 60px\r\n        line-height: 72px\r\n    .content\r\n        max-width: 648px\r\n        margin-top: 104px\r\n        margin-right: 164px\r\n\r\n.header\r\n    display: flex\r\n    flex-direction: column\r\n    gap: 16px\r\n    margin-bottom: 32px\r\n\r\n.description\r\n    font-weight: 400\r\n    font-size: 18px\r\n    line-height: 28px\r\n\r\n.start-watch-buttons\r\n    display: flex\r\n    gap: 16px\r\n\r\n.mobile\r\n    width: 320px\r\n",
+                    "styleUrl": "./header.component.sass"
+                }
+            ],
+            "stylesData": "",
+            "isDuplicate": true,
+            "duplicateId": 1,
+            "duplicateName": "HeaderComponent-1",
+            "templateData": "<div class=\"container\">\n  <div class=\"content\">\n    <div class=\"header\">\n      <p class=\"title\">The easiest way to manage projects</p>\n      <p class=\"description\">\n        From the small stuff to the big picture, organizes the work so teams\n        know what to do, why it matters, and how to get it done.\n      </p>\n    </div>\n    <div class=\"start-watch-buttons\">\n      <button\n        mat-flat-button\n        color=\"primary\"\n        style=\"\n          font-family: 'Inter';\n          font-weight: 600;\n          height: 56px;\n          width: 138px;\n        \"\n      >\n        Get Started\n      </button>\n      <button\n        mat-flat-button\n        color=\"accent\"\n        style=\"\n          color: #7c3aed;\n          font-family: 'Inter';\n          font-weight: 600;\n          height: 56px;\n          width: 179px;\n        \"\n      >\n        <mat-icon\n          aria-hidden=\"false\"\n          aria-label=\"play icon\"\n          fontIcon=\"play_circle_outline\"\n        ></mat-icon>\n        Watch Video\n      </button>\n    </div>\n  </div>\n  <img class=\"mobile\" src=\"../../../assets/Mobile.png\" alt=\"\" />\n</div>\n"
+        },
+        {
+            "name": "HomeComponent",
+            "id": "component-HomeComponent-2c0f5ae86fc4f874cafc18eddf1ee6ba28abcb4cc9811f7713603b86440fd004457c18edac740d3633199b23e30f920f8ae26969037141a9c51f712ad907cd6e",
+            "file": "src/app/pages/home/home.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-home",
+            "styleUrls": [
+                "./home.component.sass"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./home.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-home',\n  templateUrl: './home.component.html',\n  styleUrls: ['./home.component.sass'],\n})\nexport class HomeComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@media only screen and (max-width: 540px)\r\n    .bg\r\n        background-image: url('../../../assets/Bg-sm.jpg')\r\n        background-size: 100% 100%\r\n        min-height: 866px\r\n        margin-bottom: 127px\r\n\r\n@media only screen and (min-width: 540px)\r\n    .bg\r\n        background-image: url('../../../assets/Bg-md.jpg')\r\n        background-size: 100% 100%\r\n        min-height: 866px\r\n        margin-bottom: 127px\r\n\r\n@media only screen and (min-width: 1440px)\r\n    .bg\r\n        background-image: url('../../../assets/Bg.jpg')\r\n        background-size: 100% 100%\r\n        min-height: 866px\r\n        margin-bottom: 127px\r\n",
+                    "styleUrl": "./home.component.sass"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<div class=\"bg\">\n  <app-main-nav></app-main-nav>\n  <app-header></app-header>\n</div>\n<app-features></app-features>\n<app-metrics></app-metrics>\n<app-footer></app-footer>\n"
+        },
+        {
+            "name": "LoginComponent",
+            "id": "component-LoginComponent-6aecfd6bf3957f7377f2a7c3c46cfcfc2bc24d2fc33c355c414f3c93b900ea87df01dad6371feaca5bd037e16ed24a27554514d530dd1dcef5459daaf0151e42",
+            "file": "src/app/pages/login/login.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-login",
+            "styleUrls": [
+                "./login.component.sass"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./login.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "hide",
+                    "defaultValue": "true",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 15
+                },
+                {
+                    "name": "loginForm",
+                    "defaultValue": "new FormGroup({\n    email: new FormControl(''),\n    password: new FormControl(''),\n  })",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "login",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 19,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { FormGroup, FormControl } from '@angular/forms';\nimport { SessionsService } from 'src/app/services/sessions.service';\n\n@Component({\n  selector: 'app-login',\n  templateUrl: './login.component.html',\n  styleUrls: ['./login.component.sass'],\n})\nexport class LoginComponent {\n  loginForm = new FormGroup({\n    email: new FormControl(''),\n    password: new FormControl(''),\n  });\n  hide = true;\n\n  constructor(private sessionsService: SessionsService) {}\n\n  login() {\n    this.sessionsService.login(this.loginForm.value);\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@media only screen and (max-width: 540px)\r\n    .login-portrait\r\n        display: none\r\n    .login-container\r\n        width: 100%\r\n\r\n@media only screen and (min-width: 540px)\r\n    .login-portrait\r\n        display: block\r\n        width: 50%\r\n    .login-container\r\n        width: 50%\r\n\r\n@media only screen and (min-width: 1440px)\r\n    .login-portrait\r\n        display: block\r\n        width: 50%\r\n    .login-container\r\n        width: 50%\r\n\r\n.container\r\n    display: flex\r\n    font-family: Roboto\r\n    height: 100%\r\n    .login-container\r\n        display: flex\r\n        flex-direction: column\r\n        justify-content: center\r\n        align-items: center\r\n        padding: 0 16.5px\r\n    form\r\n        display: flex\r\n        flex-direction: column\r\n        max-width: 360px\r\n        width: 100%\r\n        .welcome\r\n            font-weight: 400\r\n            font-size: 16px\r\n            line-height: 19px\r\n            color: #2D3748\r\n            margin-bottom: 2px\r\n        .login-title\r\n            font-weight: 700\r\n            font-size: 30px\r\n            line-height: 35px\r\n            color: #1A202C\r\n            margin-bottom: 20.5px\r\n        .forgot-password\r\n            font-weight: 400\r\n            font-size: 14px\r\n            line-height: 16px\r\n            color: #2C5282\r\n            text-align: end\r\n            margin-bottom: 25px\r\n        .remember-mail\r\n            font-weight: 400\r\n            font-size: 14px\r\n            line-height: 16px\r\n            left: -10px\r\n            margin-bottom: 60px\r\n        button\r\n            margin-bottom: 15px\r\n",
+                    "styleUrl": "./login.component.sass"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "sessionsService",
+                        "type": "SessionsService",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 15,
+                "jsdoctags": [
+                    {
+                        "name": "sessionsService",
+                        "type": "SessionsService",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "templateData": "<div class=\"container\">\n  <img\n    src=\"../../../assets/LoginImage.png\"\n    alt=\"login portrait\"\n    class=\"login-portrait\"\n  />\n  <div class=\"login-container\">\n    <form [formGroup]=\"loginForm\">\n      <p class=\"welcome\">Bienvenido</p>\n      <p class=\"login-title\">Inicia sesión</p>\n      <mat-form-field appearance=\"outline\">\n        <mat-label>Email</mat-label>\n        <input matInput formControlName=\"email\" placeholder=\"john@mail.com\" />\n      </mat-form-field>\n      <mat-form-field appearance=\"outline\">\n        <mat-label>Password</mat-label>\n        <input\n          matInput\n          [type]=\"hide ? 'password' : 'text'\"\n          placeholder=\"******\"\n          formControlName=\"password\"\n        />\n        <button\n          mat-icon-button\n          matSuffix\n          (click)=\"hide = !hide\"\n          [attr.aria-label]=\"'Hide password'\"\n          [attr.aria-pressed]=\"hide\"\n          style=\"height: 30px; align-self: center\"\n        >\n          <mat-icon>{{ hide ? \"visibility_off\" : \"visibility\" }}</mat-icon>\n        </button>\n      </mat-form-field>\n      <a href=\"#\"><p class=\"forgot-password\">¿Olvidaste tu contraseña?</p></a>\n      <mat-checkbox color=\"primary\" class=\"remember-mail\"\n        >Recordar correo</mat-checkbox\n      >\n      <button\n        mat-flat-button\n        color=\"primary\"\n        style=\"font-family: 'Inter'; font-weight: 600; height: 50px\"\n        (click)=\"login()\"\n      >\n        Ingresar\n      </button>\n      <button\n        mat-flat-button\n        color=\"primary\"\n        style=\"\n          font-family: 'Inter';\n          font-weight: 600;\n          height: 50px;\n          background-color: #2d3748;\n        \"\n      >\n        <mat-icon\n          ><img\n            src=\"../../../assets/Google.svg\"\n            alt=\"google icon\"\n            width=\"20px\"\n            height=\"20px\"\n        /></mat-icon>\n        Ingresar con google\n      </button>\n    </form>\n  </div>\n</div>\n"
+        },
+        {
+            "name": "MainNavComponent",
+            "id": "component-MainNavComponent-80d61d77c46a7b370d62fe2865b8b64c39dc639e13220615b08395af2c863b3370543a4f8ce66a9f2b0515a3ae914836756d6ed3a098815cc63621dd564c04d3",
+            "file": "src/app/components/main-nav/main-nav.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-main-nav",
+            "styleUrls": [
+                "./main-nav.component.sass"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./main-nav.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "isHandset$",
+                    "defaultValue": "this.breakpointObserver\n    .observe(Breakpoints.Handset)\n    .pipe(\n      map((result) => result.matches),\n      shareReplay()\n    )",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Observable<boolean>",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                },
+                {
+                    "name": "isTablet$",
+                    "defaultValue": "this.breakpointObserver\n    .observe(Breakpoints.Tablet)\n    .pipe(\n      map((result) => result.matches),\n      shareReplay()\n    )",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Observable<boolean>",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';\nimport { Observable } from 'rxjs';\nimport { map, shareReplay } from 'rxjs/operators';\n\n@Component({\n  selector: 'app-main-nav',\n  templateUrl: './main-nav.component.html',\n  styleUrls: ['./main-nav.component.sass'],\n})\nexport class MainNavComponent {\n  isHandset$: Observable<boolean> = this.breakpointObserver\n    .observe(Breakpoints.Handset)\n    .pipe(\n      map((result) => result.matches),\n      shareReplay()\n    );\n\n  isTablet$: Observable<boolean> = this.breakpointObserver\n    .observe(Breakpoints.Tablet)\n    .pipe(\n      map((result) => result.matches),\n      shareReplay()\n    );\n  constructor(private breakpointObserver: BreakpointObserver) {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@media only screen and (max-width: 540px)\n  .sidenav-container\n    margin: 0 20px\n\n@media only screen and (min-width: 540px)\n  .sidenav-container\n    margin: 0 40px\n\n@media only screen and (min-width: 1440px)\n  .sidenav-container\n    margin: 0 112px\n\nbutton[mat-icon-button]\n  margin-left: 48px\n  padding-right: 0\n\n.sidenav-container\n  height: 100%\n  background-color: transparentize(#fff, 1)\n\n.sidenav\n  width: 200px\n\n.sidenav .mat-toolbar\n  background: inherit\n\n.mat-toolbar.mat-primary\n  position: sticky\n  top: 0\n  z-index: 1\n\n.hidden\n  display: none\n\n.mat-toolbar\n  background-color: transparentize(#fff, 1)\n\n  div\n    a\n      display: inline-block\n      margin: 0 12px\n      color: #000\n      text-decoration: none\n  img\n    margin-right: 32px\n\n  .login-register-buttons\n    display: flex\n    gap: 40px\n\n.spacer\n  flex: 1 1 auto\n",
+                    "styleUrl": "./main-nav.component.sass"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "breakpointObserver",
+                        "type": "BreakpointObserver",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 24,
+                "jsdoctags": [
+                    {
+                        "name": "breakpointObserver",
+                        "type": "BreakpointObserver",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "templateData": "<mat-sidenav-container class=\"sidenav-container\">\n  <mat-sidenav\n    #drawer\n    class=\"sidenav\"\n    fixedInViewport\n    [attr.role]=\"\n      (isHandset$ | async) || (isTablet$ | async) ? 'dialog' : 'navigation'\n    \"\n    [mode]=\"'over'\"\n    [opened]=\"\n      !((isHandset$ | async) === false || (isTablet$ | async) === false)\n    \"\n  >\n    <mat-toolbar>Menu</mat-toolbar>\n    <mat-nav-list>\n      <div *ngIf=\"isHandset$ | async\" class=\"login-register-buttons\">\n        <button\n          mat-flat-button\n          color=\"primary\"\n          style=\"font-family: 'Inter'; font-weight: 600\"\n          routerLink=\"/login\"\n        >\n          Iniciar sesión\n        </button>\n        <button\n          mat-flat-button\n          color=\"accent\"\n          style=\"color: #7c3aed; font-family: 'Inter'; font-weight: 600\"\n        >\n          Regístrate\n        </button>\n      </div>\n      <a mat-list-item href=\"#\">Features</a>\n      <a mat-list-item href=\"#\">Pricing</a>\n      <a mat-list-item href=\"#\">Careers</a>\n      <a mat-list-item href=\"#\">Ayuda</a>\n    </mat-nav-list>\n  </mat-sidenav>\n  <mat-sidenav-content>\n    <mat-toolbar color=\"none\">\n      <img src=\"../../../assets/Logo.svg\" />\n      <div *ngIf=\"!(isHandset$ | async) && !(isTablet$ | async)\">\n        <a href=\"#\">Features</a>\n        <a href=\"#\">Pricing</a>\n        <a href=\"#\">Careers</a>\n        <a href=\"#\">Ayuda</a>\n      </div>\n      <div class=\"spacer\"></div>\n      <div *ngIf=\"!(isHandset$ | async)\" class=\"login-register-buttons\">\n        <button\n          mat-flat-button\n          color=\"primary\"\n          style=\"font-family: 'Inter'; font-weight: 600\"\n          routerLink=\"/login\"\n        >\n          Iniciar sesión\n        </button>\n        <button\n          mat-flat-button\n          color=\"accent\"\n          style=\"color: #7c3aed; font-family: 'Inter'; font-weight: 600\"\n        >\n          Regístrate\n        </button>\n      </div>\n      <button\n        type=\"button\"\n        aria-label=\"Toggle sidenav\"\n        mat-icon-button\n        (click)=\"drawer.toggle()\"\n        *ngIf=\"(isHandset$ | async) || (isTablet$ | async)\"\n      >\n        <mat-icon aria-label=\"Side nav toggle icon\">menu</mat-icon>\n      </button>\n    </mat-toolbar>\n    <!-- Add Content Here -->\n  </mat-sidenav-content>\n</mat-sidenav-container>\n"
+        },
+        {
+            "name": "MetricComponent",
+            "id": "component-MetricComponent-73649ac1ac649f7d80f4fec57238ec47b5c352cf17e8c5cd55d61aa3d78830dee9dcaca31d66185b319a08d1efe0e90ab219aeb04ab9811f0e1241a15ec5015c",
+            "file": "src/app/components/metric/metric.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-metric",
+            "styleUrls": [
+                "./metric.component.sass"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./metric.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "description",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "icon",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "title",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, ChangeDetectionStrategy } from '@angular/core';\n\n@Component({\n  selector: 'app-metric',\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  templateUrl: './metric.component.html',\n  styleUrls: ['./metric.component.sass'],\n})\nexport class MetricComponent {\n  @Input() title!: string;\n  @Input() description!: string;\n  @Input() icon!: string;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".container\r\n    max-width: 384px\r\n    justify-self: center\r\n    display: flex\r\n    align-items: center\r\n    gap: 24px\r\n\r\n.icon\r\n    width: 32px\r\n    height: 32px\r\n\r\n.title\r\n    font-weight: 700\r\n    font-size: 30px\r\n    line-height: 40px\r\n\r\n.description\r\n    font-weight: 400\r\n    font-size: 16px\r\n    line-height: 24px\r\n",
+                    "styleUrl": "./metric.component.sass"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<div class=\"container\">\n  <img class=\"icon\" [src]=\"icon\" alt=\"icon\" />\n  <div class=\"content\">\n    <p class=\"title\">{{ title }}</p>\n    <p class=\"description\">{{ description }}</p>\n  </div>\n</div>\n"
+        },
+        {
+            "name": "MetricsComponent",
+            "id": "component-MetricsComponent-92974b2dc8deb7c232a74e7d9ee6b6468a203b1fbc43db13c8fd7bc97e7e1ee7b9618f15274b00d42c0ac61f8154e438f838bd6d8febfd357fcdb18897c6a448",
+            "file": "src/app/components/metrics/metrics.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-metrics",
+            "styleUrls": [
+                "./metrics.component.sass"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./metrics.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "metrics",
+                    "defaultValue": "[\n    {\n      title: '10,000+',\n      description: 'Downloads per day',\n      icon: '../../assets/RobustWorkflow.svg',\n    },\n    {\n      title: '2 Million',\n      description: 'Users',\n      icon: '../../assets/MultipleLayouts.svg',\n    },\n    {\n      title: '500+',\n      description: 'Clients',\n      icon: '../../assets/BetterComponents.svg',\n    },\n    {\n      title: '140',\n      description: 'Countries',\n      icon: '../../assets/Countries.svg',\n    },\n  ]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Metric[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 10
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { Metric } from 'src/app/models/metric.model';\n\n@Component({\n  selector: 'app-metrics',\n  templateUrl: './metrics.component.html',\n  styleUrls: ['./metrics.component.sass'],\n})\nexport class MetricsComponent {\n  metrics: Metric[] = [\n    {\n      title: '10,000+',\n      description: 'Downloads per day',\n      icon: '../../assets/RobustWorkflow.svg',\n    },\n    {\n      title: '2 Million',\n      description: 'Users',\n      icon: '../../assets/MultipleLayouts.svg',\n    },\n    {\n      title: '500+',\n      description: 'Clients',\n      icon: '../../assets/BetterComponents.svg',\n    },\n    {\n      title: '140',\n      description: 'Countries',\n      icon: '../../assets/Countries.svg',\n    },\n  ];\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@media only screen and (max-width: 540px)\r\n    .container\r\n        margin: 0 20px\r\n        flex-direction: column\r\n        gap: 48px\r\n    .metrics-container\r\n        display: grid\r\n        grid-template-columns: 1fr\r\n        gap: 46px\r\n    .header\r\n        max-width: 100%\r\n\r\n@media only screen and (min-width: 540px)\r\n    .container\r\n        margin: 0 40px\r\n        flex-direction: column\r\n        gap: 48px\r\n    .metrics-container\r\n        display: grid\r\n        grid-template-columns: 1fr 1fr\r\n        gap: 46px\r\n    .header\r\n        max-width: 100%\r\n\r\n@media only screen and (min-width: 1440px)\r\n    .container\r\n        margin: 0 112px\r\n        flex-direction: row\r\n        gap: 0px\r\n    .metrics-container\r\n        display: grid\r\n        grid-template-columns: 1fr 1fr\r\n        gap: 46px\r\n    .header\r\n        max-width: 592px\r\n\r\n.container\r\n    display: flex\r\n    justify-content: space-evenly\r\n    margin-bottom: 80px\r\n\r\n.title\r\n    font-weight: 700\r\n    font-size: 48px\r\n    line-height: 60px\r\n    margin-bottom: 8px\r\n\r\n.description\r\n    font-weight: 400\r\n    font-size: 18px\r\n    line-height: 28px\r\n",
+                    "styleUrl": "./metrics.component.sass"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<div class=\"container\">\n  <div class=\"header\">\n    <p class=\"title\">Our 18 years of achievements</p>\n    <p class=\"description\">With our super powers we have reached this</p>\n  </div>\n\n  <div class=\"metrics-container\">\n    <app-metric\n      *ngFor=\"let metric of metrics\"\n      [title]=\"metric.title\"\n      [description]=\"metric.description\"\n      [icon]=\"metric.icon\"\n    ></app-metric>\n  </div>\n</div>\n"
+        },
+        {
+            "name": "PageComponent",
+            "id": "component-PageComponent-7126d8c2607c946741c651482413b43feb72b2d63cac9d3ac173fde206a5e635eb4cdbf7ca7ac9327c7d4d05cf7ef619144c34c11609ad677081d0ee4e855064",
+            "file": "src/stories/page.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-page",
+            "styleUrls": [
+                "./page.css"
+            ],
+            "styles": [],
+            "template": "<article>    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"doLogout()\"\n      (onLogin)=\"doLogin()\"\n      (onCreateAccount)=\"doCreateAccount()\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "User | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 64
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "doCreateAccount",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 74,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "doLogin",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 70,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "doLogout",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 66,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { User } from './User';\n\n@Component({\n  selector: 'storybook-page',\n  template: `<article>\n    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"doLogout()\"\n      (onLogin)=\"doLogin()\"\n      (onCreateAccount)=\"doCreateAccount()\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>`,\n  styleUrls: ['./page.css'],\n})\nexport default class PageComponent {\n  user: User | null = null;\n\n  doLogout() {\n    this.user = null;\n  }\n\n  doLogin() {\n    this.user = { name: 'Jane Doe' };\n  }\n\n  doCreateAccount() {\n    this.user = { name: 'Jane Doe' };\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "section {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  line-height: 24px;\n  padding: 48px 20px;\n  margin: 0 auto;\n  max-width: 600px;\n  color: #333;\n}\n\nsection h2 {\n  font-weight: 900;\n  font-size: 32px;\n  line-height: 1;\n  margin: 0 0 4px;\n  display: inline-block;\n  vertical-align: top;\n}\n\nsection p {\n  margin: 1em 0;\n}\n\nsection a {\n  text-decoration: none;\n  color: #1ea7fd;\n}\n\nsection ul {\n  padding-left: 30px;\n  margin: 1em 0;\n}\n\nsection li {\n  margin-bottom: 8px;\n}\n\nsection .tip {\n  display: inline-block;\n  border-radius: 1em;\n  font-size: 11px;\n  line-height: 12px;\n  font-weight: 700;\n  background: #e7fdd8;\n  color: #66bf3c;\n  padding: 4px 12px;\n  margin-right: 10px;\n  vertical-align: top;\n}\n\nsection .tip-wrapper {\n  font-size: 13px;\n  line-height: 20px;\n  margin-top: 40px;\n  margin-bottom: 40px;\n}\n\nsection .tip-wrapper svg {\n  display: inline-block;\n  height: 12px;\n  width: 12px;\n  margin-right: 4px;\n  vertical-align: top;\n  margin-top: 3px;\n}\n\nsection .tip-wrapper svg path {\n  fill: #1ea7fd;\n}\n",
+                    "styleUrl": "./page.css"
+                }
+            ],
+            "stylesData": ""
+        },
+        {
+            "name": "PostsComponent",
+            "id": "component-PostsComponent-e53d06f836f2f530ccc7bdb55f1548a96b284b9733fc28e5452714da68fac885b61d2fdf0ed0a5bd3428a8464a73645dc4bb2fe4b2704ed00a4989f522814055",
+            "file": "src/app/pages/posts/posts.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-posts",
+            "styleUrls": [
+                "./posts.component.sass"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./posts.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "body",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 47
+                },
+                {
+                    "name": "columnsToDisplay",
+                    "defaultValue": "[\n    'Nombre',\n    'Username',\n    'Dirección',\n    'Correo',\n    'Phone Number',\n  ]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 37
+                },
+                {
+                    "name": "columnsToDisplayWithExpand",
+                    "defaultValue": "[...this.columnsToDisplay, 'expand']",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 44
+                },
+                {
+                    "name": "dialog",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "MatDialog",
+                    "optional": false,
+                    "description": "",
+                    "line": 35,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "expandedElement",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "User | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 45
+                },
+                {
+                    "name": "title",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 46
+                },
+                {
+                    "name": "users",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 49
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 51,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "openDialog",
+                    "args": [
+                        {
+                            "name": "userId",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 57,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "userId",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Inject } from '@angular/core';\nimport {\n  MatDialog,\n  MAT_DIALOG_DATA,\n  MatDialogRef,\n} from '@angular/material/dialog';\nimport {\n  animate,\n  state,\n  style,\n  transition,\n  trigger,\n} from '@angular/animations';\nimport { UsersService } from 'src/app/services/users.service';\nimport { PostsService } from 'src/app/services/posts.service';\nimport { User } from 'src/app/models/user.model';\nimport { Post } from 'src/app/models/post.model';\n\n@Component({\n  selector: 'app-posts',\n  templateUrl: './posts.component.html',\n  styleUrls: ['./posts.component.sass'],\n  animations: [\n    trigger('detailExpand', [\n      state('collapsed', style({ height: '0px', minHeight: '0' })),\n      state('expanded', style({ height: '*' })),\n      transition(\n        'expanded <=> collapsed',\n        animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')\n      ),\n    ]),\n  ],\n})\nexport class PostsComponent {\n  constructor(private usersService: UsersService, public dialog: MatDialog) {}\n\n  columnsToDisplay: string[] = [\n    'Nombre',\n    'Username',\n    'Dirección',\n    'Correo',\n    'Phone Number',\n  ];\n  columnsToDisplayWithExpand: string[] = [...this.columnsToDisplay, 'expand'];\n  expandedElement!: User | null;\n  title!: string;\n  body!: string;\n  // eslint-disable-next-line @typescript-eslint/no-explicit-any\n  users: any[] = [];\n\n  ngOnInit(): void {\n    this.usersService.getAllUsers().subscribe((data) => {\n      this.users = data;\n    });\n  }\n\n  openDialog(userId: number): void {\n    const dialogRef = this.dialog.open(CreatePostDialogComponent, {\n      data: { title: this.title, body: this.body, userId: userId },\n    });\n\n    dialogRef.afterClosed().subscribe((result) => {\n      this.body = result;\n    });\n  }\n}\n\n@Component({\n  selector: 'app-create-post-dialog',\n  templateUrl: './create-post-dialog.html',\n  styleUrls: ['./create-post-dialog.sass'],\n})\nexport class CreatePostDialogComponent {\n  constructor(\n    public dialogRef: MatDialogRef<CreatePostDialogComponent>,\n    private postsService: PostsService,\n    @Inject(MAT_DIALOG_DATA) public data: Post\n  ) {}\n\n  onNoClick(): void {\n    this.dialogRef.close();\n  }\n\n  addPost() {\n    this.postsService\n      .addPost({\n        title: this.data.title,\n        body: this.data.body,\n        userId: this.data.userId,\n      })\n      .subscribe((response) => {\n        console.log(`Post Saved as ${response}`);\n      });\n    this.onNoClick();\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "table\r\n    width: 100%\r\n\r\n.container\r\n    display: flex\r\n    justify-content: center\r\n    padding: 139px 139px\r\n\r\ntr.example-detail-row\r\n    height: 0\r\n\r\ntr.example-element-row:not(.example-expanded-row):hover\r\n    background: whitesmoke\r\n\r\ntr.example-element-row:not(.example-expanded-row):active\r\n    background: #efefef\r\n\r\n.example-element-row td\r\n    border-bottom-width: 0\r\n\r\n.example-element-detail\r\n    overflow: hidden\r\n    display: flex\r\n    width: 100%\r\n\r\n.example-element-diagram\r\n    min-width: 80px\r\n    border: 2px solid black\r\n    padding: 8px\r\n    font-weight: lighter\r\n    margin: 8px 0\r\n    height: 104px\r\n\r\n.example-element-symbol\r\n    font-weight: bold\r\n    font-size: 40px\r\n    line-height: normal\r\n\r\n.example-element-description\r\n    padding: 16px\r\n\r\n    &-attribution\r\n        opacity: 0.5\r\n\r\nth, td\r\n    text-align: center\r\n    vertical-align: middle\r\n\r\nth.mat-mdc-header-cell\r\n    background: #808692\r\n    color: #FFFFFF\r\n",
+                    "styleUrl": "./posts.component.sass"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "usersService",
+                        "type": "UsersService",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    },
+                    {
+                        "name": "dialog",
+                        "type": "MatDialog",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 34,
+                "jsdoctags": [
+                    {
+                        "name": "usersService",
+                        "type": "UsersService",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "dialog",
+                        "type": "MatDialog",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "templateData": "<div class=\"container\">\n  <table\n    mat-table\n    [dataSource]=\"users\"\n    multiTemplateDataRows\n    class=\"mat-elevation-z8\"\n  >\n    <ng-container\n      matColumnDef=\"{{ column }}\"\n      *ngFor=\"let column of columnsToDisplay\"\n    >\n      <th mat-header-cell *matHeaderCellDef>{{ column }}</th>\n      <td mat-cell *matCellDef=\"let element\">{{ element[column] }}</td>\n    </ng-container>\n    <ng-container matColumnDef=\"expand\">\n      <th mat-header-cell *matHeaderCellDef aria-label=\"row actions\">Post</th>\n      <td mat-cell *matCellDef=\"let element\">\n        <button\n          mat-icon-button\n          aria-label=\"expand row\"\n          (click)=\"\n            expandedElement = expandedElement === element ? null : element;\n            $event.stopPropagation()\n          \"\n        >\n          <mat-icon *ngIf=\"expandedElement !== element\"\n            >keyboard_arrow_down</mat-icon\n          >\n          <mat-icon *ngIf=\"expandedElement === element\"\n            >keyboard_arrow_up</mat-icon\n          >\n        </button>\n      </td>\n    </ng-container>\n\n    <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns -->\n    <ng-container matColumnDef=\"expandedDetail\">\n      <td\n        mat-cell\n        *matCellDef=\"let element\"\n        [attr.colspan]=\"columnsToDisplayWithExpand.length\"\n      >\n        <div\n          class=\"example-element-detail\"\n          [@detailExpand]=\"\n            element == expandedElement ? 'expanded' : 'collapsed'\n          \"\n        >\n          <app-posts-list\n            [userId]=\"element.id\"\n            style=\"width: 100%\"\n            (openDialogEvent)=\"openDialog(element.id)\"\n          ></app-posts-list>\n        </div>\n      </td>\n    </ng-container>\n\n    <tr mat-header-row *matHeaderRowDef=\"columnsToDisplayWithExpand\"></tr>\n    <tr\n      mat-row\n      *matRowDef=\"let element; columns: columnsToDisplayWithExpand\"\n      class=\"example-element-row\"\n      [class.example-expanded-row]=\"expandedElement === element\"\n      (click)=\"expandedElement = expandedElement === element ? null : element\"\n    ></tr>\n    <tr\n      mat-row\n      *matRowDef=\"let row; columns: ['expandedDetail']\"\n      class=\"example-detail-row\"\n    ></tr>\n  </table>\n</div>\n"
+        },
+        {
+            "name": "PostsListComponent",
+            "id": "component-PostsListComponent-80f4b42304374a405d73b9c59c9222174eb45330c8b36d32ff16e4c4e38ab75201961cad846a09946fe45343f6e06dbbc9b9ed17fab0b295ccbf1a4786253f36",
+            "file": "src/app/components/posts-list/posts-list.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-posts-list",
+            "styleUrls": [
+                "./posts-list.component.sass"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./posts-list.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "userId",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "number",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "openDialogEvent",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [
+                {
+                    "name": "posts",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Post[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 16
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 17,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "openDialog",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 26,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';\nimport { PostsService } from 'src/app/services/posts.service';\nimport { Post } from 'src/app/models/post.model';\n\n@Component({\n  selector: 'app-posts-list',\n  templateUrl: './posts-list.component.html',\n  styleUrls: ['./posts-list.component.sass'],\n})\nexport class PostsListComponent implements OnInit {\n  constructor(private postsService: PostsService) {}\n\n  @Input() userId!: number;\n  @Output() openDialogEvent = new EventEmitter();\n\n  posts: Post[] = [];\n  ngOnInit(): void {\n    this.postsService.getPostsFromUserId(this.userId).subscribe((data) => {\n      this.posts = [...this.posts, ...data];\n    });\n    this.postsService.getLocalPostsFromUserId().subscribe((data) => {\n      this.posts = [...data, ...this.posts];\n    });\n  }\n\n  openDialog() {\n    this.openDialogEvent.emit();\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".no-posts-container\r\n    display: flex\r\n    flex-direction: column\r\n    justify-content: center\r\n    align-items: center\r\n    padding: 30px 0px\r\n    width: 100%\r\n\r\n.no-posts-title\r\n    font-weight: 400\r\n    font-size: 14px\r\n    line-height: 115%\r\n\r\n.posts-container\r\n    display: flex\r\n    padding: 30px\r\n    width: 100%\r\n    align-items: center\r\n    justify-content: space-evenly\r\n    text-align: left\r\n    .posts-content\r\n        max-width: 80%\r\n        .posts-title\r\n            font-weight: 600\r\n            font-size: 20px\r\n            line-height: 115%\r\n        .posts-body\r\n            font-weight: 400\r\n            font-size: 14px\r\n            line-height: 115%\r\n",
+                    "styleUrl": "./posts-list.component.sass"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "postsService",
+                        "type": "PostsService",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 10,
+                "jsdoctags": [
+                    {
+                        "name": "postsService",
+                        "type": "PostsService",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div *ngIf=\"posts.length === 0\" class=\"no-posts-container\">\n  <p class=\"no-posts-title\">Aún no tienes posts</p>\n  <button\n    mat-flat-button\n    color=\"primary\"\n    style=\"font-family: 'Inter'; font-weight: 600; font-size: 14px\"\n    (click)=\"openDialog()\"\n    class=\"create-post-button\"\n  >\n    Crear un post\n  </button>\n</div>\n<div *ngIf=\"posts.length > 0\" class=\"posts-container\">\n  <div class=\"posts-content\">\n    <div *ngFor=\"let post of posts\" class=\"posts-data\">\n      <p class=\"posts-title\">{{ post.title }}</p>\n      <p class=\"posts-body\">{{ post.body }}</p>\n    </div>\n  </div>\n  <button\n    mat-flat-button\n    color=\"primary\"\n    style=\"\n      font-family: 'Inter';\n      font-weight: 600;\n      font-size: 14px;\n      margin-right: 20px;\n    \"\n    (click)=\"openDialog()\"\n    class=\"create-post-button\"\n  >\n    Crear un post\n  </button>\n</div>\n"
+        }
+    ],
+    "modules": [
+        {
+            "name": "AppModule",
+            "id": "module-AppModule-b9e62e3f07531aceb852d6c329677d0c4d8e0799b5af356e793ac35c0c87409c165a4aeb378a17b09d2c65e3b7ccd635dbcdfaaba1adb9c6d71f701da57f3f0b",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\nimport { HttpClientModule } from '@angular/common/http';\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { MainNavComponent } from './components/main-nav/main-nav.component';\nimport { LayoutModule } from '@angular/cdk/layout';\nimport { MatToolbarModule } from '@angular/material/toolbar';\nimport { MatButtonModule } from '@angular/material/button';\nimport { MatSidenavModule } from '@angular/material/sidenav';\nimport { MatIconModule } from '@angular/material/icon';\nimport { MatListModule } from '@angular/material/list';\nimport { MatFormFieldModule } from '@angular/material/form-field';\nimport { MatTableModule } from '@angular/material/table';\nimport { MatDialogModule } from '@angular/material/dialog';\nimport { MatNativeDateModule } from '@angular/material/core';\nimport { HeaderComponent } from './components/header/header.component';\nimport { FeaturesComponent } from './components/features/features.component';\nimport { FeatureComponent } from './components/feature/feature.component';\nimport { MetricsComponent } from './components/metrics/metrics.component';\nimport { MetricComponent } from './components/metric/metric.component';\nimport { FooterComponent } from './components/footer/footer.component';\nimport { HomeComponent } from './pages/home/home.component';\nimport { LoginComponent } from './pages/login/login.component';\nimport { ReactiveFormsModule } from '@angular/forms';\nimport { FormsModule } from '@angular/forms';\nimport { MatInputModule } from '@angular/material/input';\nimport { MatCheckboxModule } from '@angular/material/checkbox';\nimport { PostsComponent } from './pages/posts/posts.component';\nimport { CreatePostDialogComponent } from './pages/posts/posts.component';\nimport { PostsListComponent } from './components/posts-list/posts-list.component';\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    MainNavComponent,\n    HeaderComponent,\n    FeaturesComponent,\n    FeatureComponent,\n    MetricsComponent,\n    MetricComponent,\n    FooterComponent,\n    HomeComponent,\n    LoginComponent,\n    PostsComponent,\n    CreatePostDialogComponent,\n    PostsListComponent,\n  ],\n  imports: [\n    BrowserModule,\n    HttpClientModule,\n    AppRoutingModule,\n    BrowserAnimationsModule,\n    LayoutModule,\n    MatToolbarModule,\n    MatButtonModule,\n    MatSidenavModule,\n    MatIconModule,\n    MatListModule,\n    MatFormFieldModule,\n    MatInputModule,\n    MatCheckboxModule,\n    MatTableModule,\n    MatDialogModule,\n    MatNativeDateModule,\n    FormsModule,\n    ReactiveFormsModule,\n  ],\n  providers: [],\n  bootstrap: [AppComponent],\n})\nexport class AppModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        },
+                        {
+                            "name": "CreatePostDialogComponent"
+                        },
+                        {
+                            "name": "FeatureComponent"
+                        },
+                        {
+                            "name": "FeaturesComponent"
+                        },
+                        {
+                            "name": "FooterComponent"
+                        },
+                        {
+                            "name": "HomeComponent"
+                        },
+                        {
+                            "name": "LoginComponent"
+                        },
+                        {
+                            "name": "MainNavComponent"
+                        },
+                        {
+                            "name": "MetricComponent"
+                        },
+                        {
+                            "name": "MetricsComponent"
+                        },
+                        {
+                            "name": "PostsComponent"
+                        },
+                        {
+                            "name": "PostsListComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AppRoutingModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AppRoutingModule",
+            "id": "module-AppRoutingModule-16ab1e26570529e27fe31973503316536813918b47dd87a4df077550a58c8f65924760ed5f0f00933d3e92f6d967696f81f8b1ce145ecc6f1f609bb2e3629ad3",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app-routing.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\nimport { AuthGuard } from './guards/auth.guard';\nimport { HomeComponent } from './pages/home/home.component';\nimport { LoginComponent } from './pages/login/login.component';\nimport { PostsComponent } from './pages/posts/posts.component';\n\nconst routes: Routes = [\n  {\n    path: '',\n    redirectTo: '/home',\n    pathMatch: 'full',\n  },\n  {\n    path: 'home',\n    component: HomeComponent,\n  },\n  {\n    path: 'login',\n    component: LoginComponent,\n  },\n  {\n    path: 'posts',\n    component: PostsComponent,\n    canActivate: [AuthGuard],\n  },\n];\n\n@NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule],\n})\nexport class AppRoutingModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.development.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n    baseURL: \"https://jsonplaceholder.typicode.com\"\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n    baseURL: \"https://jsonplaceholder.typicode.com\"\n}"
+            },
+            {
+                "name": "Large",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedIn",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedIn",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Secondary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Small",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Button>",
+                "defaultValue": "(args: Button) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Header>",
+                "defaultValue": "(args: Header) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Page>",
+                "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "src/environments/environment.development.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.development.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n    baseURL: \"https://jsonplaceholder.typicode.com\"\n}"
+                }
+            ],
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n    baseURL: \"https://jsonplaceholder.typicode.com\"\n}"
+                }
+            ],
+            "src/stories/Button.stories.ts": [
+                {
+                    "name": "Large",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Secondary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Small",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<Button>",
+                    "defaultValue": "(args: Button) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/Header.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<Header>",
+                    "defaultValue": "(args: Header) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/Page.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<Page>",
+                    "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": {
+        "name": "<root>",
+        "kind": "module",
+        "className": "AppModule",
+        "children": [
+            {
+                "name": "routes",
+                "filename": "src/app/app-routing.module.ts",
+                "module": "AppRoutingModule",
+                "children": [
+                    {
+                        "path": "",
+                        "redirectTo": "/home",
+                        "pathMatch": "full"
+                    },
+                    {
+                        "path": "home",
+                        "component": "HomeComponent"
+                    },
+                    {
+                        "path": "login",
+                        "component": "LoginComponent"
+                    },
+                    {
+                        "path": "posts",
+                        "component": "PostsComponent",
+                        "canActivate": [
+                            "AuthGuard"
+                        ]
+                    }
+                ],
+                "kind": "module"
+            }
+        ]
+    },
+    "coverage": {
+        "count": 1,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/feature/feature.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "FeatureComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/features/features.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "FeaturesComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/footer/footer.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "FooterComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/header/header.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HeaderComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/main-nav/main-nav.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "MainNavComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/metric/metric.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "MetricComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/metrics/metrics.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "MetricsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/posts-list/posts-list.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PostsListComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/guards/auth.guard.ts",
+                "type": "guard",
+                "linktype": "guard",
+                "name": "AuthGuard",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/models/feature.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Feature",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/models/metric.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Metric",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/models/post.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Post",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/models/reqres.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Address",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/models/reqres.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Company",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/models/reqres.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Geo",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/models/reqres.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "ReqResResponse",
+                "coveragePercent": 0,
+                "coverageCount": "0/9",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/models/user.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "User",
+                "coveragePercent": 0,
+                "coverageCount": "0/8",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/home/home.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HomeComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/login/login.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "LoginComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/posts/posts.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CreatePostDialogComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/posts/posts.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PostsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/11",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/services/posts.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "PostsService",
+                "coveragePercent": 0,
+                "coverageCount": "0/8",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/services/sessions.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "SessionsService",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/services/users.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "UsersService",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.development.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Large",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Secondary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Small",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedIn",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedOut",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedIn",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedOut",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/User.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "User",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonComponent",
+                "coveragePercent": 83,
+                "coverageCount": "5/6",
+                "status": "very-good"
+            },
+            {
+                "filePath": "src/stories/header.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HeaderComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            }
+        ]
+    }
+}
